@@ -1,0 +1,5 @@
+gawk          make
+libxcrypt
+linux-headers
+pigz
+python        make
