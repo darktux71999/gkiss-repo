@@ -1,0 +1,7 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+${CC:-cc} -o xrectsel xrectsel.c strtonum.c -lX11
+mkdir -p "$1/usr/bin/"
+cp xrectsel "$1/usr/bin/"

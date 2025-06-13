@@ -1,0 +1,9 @@
+freetype-harfbuzz
+libXdmcp make
+libXfont
+libXtst
+libfontenc
+libpng
+linux-headers make
+pkgconf make
+xtrans

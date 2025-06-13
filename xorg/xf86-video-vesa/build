@@ -1,0 +1,11 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+export LDFLAGS="-Wl,-z,lazy"
+
+./configure \
+    --prefix=/usr
+
+make
+make install
