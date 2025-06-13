@@ -1,0 +1,12 @@
+#!/bin/sh -e
+
+mkdir build
+
+go build -v \
+    -trimpath \
+    -modcacherw \
+    -o build \
+    .
+
+mkdir -p "$1/usr/bin"
+cp build/tea "$1/usr/bin/"

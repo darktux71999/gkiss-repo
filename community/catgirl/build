@@ -1,0 +1,8 @@
+#!/bin/sh -e
+
+patch -p1 < 0001-input.c-add-kiss-macro.patch
+./configure \
+    --prefix=/usr \
+    --mandir=/usr/share/man
+
+make DESTDIR="$1" install

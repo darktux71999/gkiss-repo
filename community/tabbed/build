@@ -1,0 +1,10 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+# Release tarball is missing xembed's manpage.
+sed "/xembed.1/d" Makefile > _
+mv -f _ Makefile
+
+make
+make PREFIX=/usr install

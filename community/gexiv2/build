@@ -1,0 +1,31 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+
+sed "/subdir('test')/d" meson.build > _
+mv -f _ meson.build
+
+# Check for gobject-introspection support.
+if command -v g-ir-compiler; then
+    intro="true"
+fi
+
+if command -v vala; then
+    vapi="true"
+fi
+
+meson setup \
+    -Dprefix=/usr \
+    -Dsysconfdir=/etc \
+    -Dmandir=/usr/share/man \
+    -Dlocalstatedir=/var \
+    -Dbuildtype=plain \
+    -Dgtk_doc=false \
+    -Dintrospection="${intro:-false}" \
+    -Dvapi="${vapi:-false}" \
+    -Dpython3=false \
+    output
+
+ninja -C output
+ninja -C output install

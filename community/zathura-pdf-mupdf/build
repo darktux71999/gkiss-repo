@@ -1,0 +1,12 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+patch -p1 < fix-meson.build.patch
+
+meson setup \
+    -Dprefix=/usr \
+    output
+
+ninja -C output
+meson install -C output

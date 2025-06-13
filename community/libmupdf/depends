@@ -1,0 +1,7 @@
+brotli
+freetype-harfbuzz
+jbig2dec
+libjpeg-turbo
+openssl
+pkgconf make
+zlib

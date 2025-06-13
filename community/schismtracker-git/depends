@@ -1,0 +1,4 @@
+autoconf make
+libX11
+libXext
+sdl

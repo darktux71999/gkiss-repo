@@ -1,0 +1,12 @@
+#!/bin/sh -e
+
+patch -p1 < bump-libc.patch
+
+cargo build \
+    --release \
+    --no-default-features \
+    --features alsa_backend
+          
+install -Dm755 target/release/spotifyd "$1/usr/bin/spotifyd"
+        
+        

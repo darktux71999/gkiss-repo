@@ -1,0 +1,53 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+export CFLAGS="$CFLAGS -D_LARGEFILE64_SOURCE"
+export CXXFLAGS="$CXXFLAGS -D_LARGEFILE64_SOURCE"
+
+# Below will allow the build to continue without gettext.
+sed \
+    -e "/subdir('po/d" \
+    -e "/subdir('desktop')/d" \
+    meson.build > _
+mv -f _ meson.build
+sed \
+    -e "/subdir('tags')/d" \
+    -e "/subdir('tips')/d" \
+    data/meson.build > _
+mv -f _ data/meson.build
+sed "/subdir('goat/d" extensions/meson.build > _
+mv -f _ extensions/meson.build
+
+# Correct the version of mypaint-brushes.
+sed "s/mypaint-brushes-1.0/mypaint-brushes-2.0/" meson.build > _
+mv -f _ meson.build
+
+# Change 'babl' to 'babl-0.1' since the name of the pc file changed.
+sed "/dependency('babl'/s/'babl'/'babl-0.1'/" meson.build > _
+mv -f _ meson.build
+
+# Remove all meson.build files which are associated with test directories.
+find . -type d | grep -E "tests?$" | xargs -I{} sh -c "test -e {}/meson.build && echo {}/meson.build" | xargs -I{} sh -c ": > {}"
+
+meson setup \
+    -Dprefix=/usr \
+    -Dcheck-update=no \
+    -Dmng=disabled \
+    -Dwmf=disabled \
+    -Dopenexr=disabled \
+    -Dheadless-tests=disabled \
+    -Dgi-docgen=disabled \
+    -Dg-ir-doc=false \
+    -Dvector-icons=false \
+    -Djavascript=disabled \
+    -Dpython=disabled \
+    -Dlua=disabled \
+    -Dvala=disabled \
+    output
+
+ninja -C output
+ninja -C output install
+
+rm -rf "$1/usr/share/gtk-doc"
+find "$1" -name '*.la' -type f -exec rm -rf {} +

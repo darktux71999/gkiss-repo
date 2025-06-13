@@ -1,0 +1,12 @@
+autoconf make
+automake make
+cairo
+gettext-tiny make
+glib
+gtk+3
+libgsf
+librsvg
+libtool  make
+libxml2
+libxslt
+pango

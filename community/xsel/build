@@ -1,0 +1,14 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+autoreconf -vif
+# Fix strncpy() error.
+sed 's/MAXFNAME)/MAXFNAME-1)/' xsel.c > _
+mv -f _ xsel.c
+
+./configure \
+    --prefix=/usr
+
+make
+make install

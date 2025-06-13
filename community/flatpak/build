@@ -1,0 +1,19 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+PYTHONPATH=$PWD/pyparsing:$(python -c "import sys; print(':'.join(sys.path))")
+export PYTHONPATH
+
+meson setup \
+    -Dprefix=/usr \
+    -Dsysconfdir=/etc \
+    -Dsystem_bubblewrap=/usr/bin/bwrap \
+    -Dseccomp=enabled \
+    -Dsystem_helper=disabled \
+    -Dxauth=disabled \
+    -Dtests=false \
+    output
+
+ninja -C output
+ninja -C output install

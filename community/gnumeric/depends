@@ -1,0 +1,16 @@
+atk
+bison   make
+cairo
+freetype-harfbuzz
+gdk-pixbuf
+gettext-tiny make
+glib
+goffice
+gtk+3
+libgsf
+libxml2
+libxslt
+pango
+perl    make
+pkgconf make
+python  make

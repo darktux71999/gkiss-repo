@@ -1,0 +1,10 @@
+gcc
+glu
+libX11
+libXcursor
+libXi
+libXinerama
+libXrandr
+mesa
+pkgconf make
+python

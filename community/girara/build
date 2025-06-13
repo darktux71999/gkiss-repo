@@ -1,0 +1,19 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+# The configuration dumping support is not
+# requested, so it's disabled with -Djson=disabled.
+
+meson setup \
+    -Dprefix=/usr \
+    -Dsysconfdir=/etc \
+    -Dbuildtype=release \
+    -Dbackend=ninja \
+    -Djson=disabled \
+    -Ddocs=disabled \
+    -Dtests=disabled \
+    output
+
+ninja -C output
+ninja -C output install

@@ -1,0 +1,7 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+cd linux
+make
+make PREFIX=/usr install

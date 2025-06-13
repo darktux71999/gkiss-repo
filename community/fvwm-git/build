@@ -1,0 +1,19 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+
+./autogen.sh
+
+./configure \
+    --disable-mandoc \
+    --disable-nls \
+    --disable-imlibtest \
+    --disable-fontconfigtest \
+    --disable-bidi \
+    --prefix=/usr \
+    --sbindir=/usr/bin \
+    --mandir=/usr/share/man
+
+make
+make install

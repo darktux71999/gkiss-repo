@@ -1,0 +1,12 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+
+mkdir -p "$1/usr/bin"
+
+${CC:-gcc} \
+    -Os -pedantic -Wall \
+    -I/usr/include tinywm.c \
+    -L/usr/lib -lX11 \
+    -o "$1/usr/bin/tinywm"

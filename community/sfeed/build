@@ -1,0 +1,9 @@
+#!/bin/sh -e
+
+make \
+    SFEED_CURSES_LDFLAGS="$LDFLAGS -lncurses -ltinfo"
+make \
+    DESTDIR="$1" \
+    PREFIX=/usr \
+    MANPREFIX=/usr/share/man \
+    install

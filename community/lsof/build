@@ -1,0 +1,11 @@
+#!/bin/sh -e
+
+export LSOF_CC="$CC"
+export LSOF_CFGF="$CFLAGS"
+export LSOF_CFGL="$LDFLAGS"
+
+./Configure -n linux
+
+make
+install -Dm755 lsof   "$1/usr/bin/lsof"
+install -Dm644 Lsof.8 "$1/usr/share/man/man1/lsof.8"

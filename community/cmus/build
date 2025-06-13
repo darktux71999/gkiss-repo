@@ -1,0 +1,9 @@
+#!/bin/sh -e
+
+patch -p1 < ffmpeg6.patch
+
+./configure \
+    prefix=/usr
+
+make
+make DESTDIR="$1" install

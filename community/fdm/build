@@ -1,0 +1,8 @@
+#!/bin/sh -e
+
+./configure \
+    --prefix=/usr \
+    --enable-pcre2
+
+make
+make DESTDIR="$1" install

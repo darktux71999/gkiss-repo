@@ -1,0 +1,10 @@
+#!/bin/sh -e
+
+./configure \
+    --prefix=/usr \
+    --without-x \
+    --disable-rpath \
+    --with-doc=no
+
+make
+make DESTDIR="$1" install

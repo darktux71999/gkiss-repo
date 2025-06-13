@@ -1,0 +1,9 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+cc -std=c99 -O2 -I /usr/X11R6/include -o sct sct.c \
+    -lm -lX11 -lXrandr
+
+mkdir -p "$1/usr/bin/"
+cp sct "$1/usr/bin/sct"

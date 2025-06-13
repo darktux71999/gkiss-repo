@@ -1,0 +1,62 @@
+#!/bin/sh -e
+
+# shellcheck disable=2016
+
+export DESTDIR="$1"
+
+# 'Vendor' libtool.
+for t in merge update extract perl; do
+    ln -sf intltool "intltool-$t"
+done
+export PATH="$PWD:$PATH"
+
+for patch in *.patch; do
+    patch -Np1 -i "$patch"
+done
+
+# Fix the configure script because it likes to double check for intltool.
+sed "s/as_fn_error \$? \"XML::Parser.*/echo fixed/" configure > _
+mv -f _ configure
+
+sed "s/as_fn_error \$? \"itstool.*/echo fixed/" configure > _
+mv -f _ configure
+
+chmod +x configure
+
+for f in doc/Makefile.*; do
+    sed '/@YELP_HELP_RULES@/d' "$f" > _
+    mv -f _ "$f"
+done
+
+# Full list of plugins.
+# shellcheck disable=2034
+plugins="$(find plugins/ -maxdepth 1 -type d |
+      grep -v '/$' |
+      xargs -I{} basename {} |
+      tr '\n' ' ')"
+
+./configure \
+    --prefix=/usr \
+    --sysconfdir=/etc \
+    --localstatedir=/var \
+    --enable-plugins="excel excelplugins lotus-123 openoffice sc" \
+    --disable-gtk-doc \
+    --disable-maintainer-mode \
+    --disable-static \
+    --without-psiconv \
+    --with-zlib \
+    --without-gda \
+    --without-perl \
+    --disable-nls \
+    --disable-schemas-compile
+
+make
+make install
+
+rm -rf "$1/etc/gconf"
+
+# no static files
+find "$1" -name '*.la' -exec rm -rf {} +
+
+# no help files
+rm -rf "$1/usr/share/help"

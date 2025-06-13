@@ -1,0 +1,15 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+# Fix build with gcc>=15.
+export CFLAGS="$CFLAGS -std=c17"
+
+./configure \
+    --prefix=/usr
+
+make
+make install
+
+# Remove the info pages.
+rm -rf "$1/usr/share/info/"

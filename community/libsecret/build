@@ -1,0 +1,18 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+# No options to disable this via meson.
+: > docs/meson.build
+: > po/meson.build
+
+pkg-config --exists gobject-introspection-1.0 && gi=true
+
+meson setup \
+    -Dprefix=/usr \
+    -Dintrospection="${gi:-false}" \
+    -Dvapi=false \
+    output
+
+ninja -C output
+ninja -C output install

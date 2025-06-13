@@ -1,0 +1,16 @@
+cairo
+expat
+freetype-harfbuzz
+gdk-pixbuf
+glib
+glu
+gtk+3
+libSM
+libX11
+libXxf86vm
+libjpeg-turbo
+libpng
+mesa
+pango
+sdl2
+tiff

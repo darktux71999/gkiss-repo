@@ -1,0 +1,11 @@
+brotli
+cmake make
+fmt make
+go make
+gtest make
+linux-headers make
+lz4
+pcre2
+perl make
+protobuf
+zstd

@@ -1,0 +1,15 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+sed "/directory(test)/d" CMakeLists.txt > _
+mv -f _ CMakeLists.txt
+
+cmake -B build \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_INSTALL_LIBDIR=lib \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DYAML_BUILD_SHARED_LIBS=ON
+
+cmake --build   build
+cmake --install build

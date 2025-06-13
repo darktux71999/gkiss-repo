@@ -1,0 +1,18 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+export RUSTFLAGS="$RUSTFLAGS -C debuginfo=2"
+
+pkg-config --exists gobject-introspection-1.0 && gi=en
+
+./configure \
+    --prefix=/usr \
+    --libexecdir=/usr/lib/librsvg \
+    --disable-static \
+    --enable-pixbuf-loader \
+    --disable-vala \
+    --"${gi:-dis}"able-introspection
+
+make
+make install

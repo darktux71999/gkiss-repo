@@ -1,0 +1,20 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+mkdir -p path
+cat > path/iconv <<EOF
+#!/bin/sh
+true
+EOF
+chmod +x path/iconv
+
+export PATH="$PWD/path:$PATH"
+
+./configure \
+    --prefix=/usr \
+    --libexecdir=/usr/lib \
+    --with-qt=no
+
+make
+make install

@@ -1,0 +1,26 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+# Disable tests.
+sed "/subdir('tests')/d" meson.build > _
+mv -f _ meson.build
+
+# Disable git check.
+sed "s/git_bin.found()/not git_bin.found()/g" meson.build > _
+mv -f _ meson.build
+
+# Remove broken code from meson.build.
+sed -e "/BABL_UNSTABLE/d" -e "/unstable/d" meson.build > _
+mv -f _ meson.build
+
+# Make meson_options.txt compatible with muon.
+sed -E "/value/s/'(true|false)'/\1/" meson_options.txt > _
+mv -f _ meson_options.txt
+
+meson setup \
+    -Dprefix=/usr \
+    output
+
+ninja -C output
+ninja -C output install

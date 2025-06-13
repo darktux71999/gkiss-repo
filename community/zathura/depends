@@ -1,0 +1,9 @@
+cairo
+file
+girara
+glib
+gtk+3
+json-glib
+pango
+pkgconf make
+sqlite

@@ -1,0 +1,17 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+
+./configure \
+    --prefix=/usr \
+    --disable-cairo \
+    --disable-rsvg \
+    --disable-xmu \
+    --disable-fribidi \
+    --disable-nls \
+    --disable-xpm \
+    --disable-xbm
+
+make
+make install

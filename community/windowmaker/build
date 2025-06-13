@@ -1,0 +1,17 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+
+./configure \
+    --enable-usermenu \
+    --enable-xinerama \
+    --disable-webp \
+    --disable-tiff \
+    --disable-xpm \
+    --without-libbsd \
+    --with-x \
+    --prefix=/usr
+
+make
+make install

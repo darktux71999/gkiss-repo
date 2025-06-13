@@ -1,0 +1,8 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+
+make
+mkdir -p "$1/usr/bin/"
+cp grabc "$1/usr/bin/"

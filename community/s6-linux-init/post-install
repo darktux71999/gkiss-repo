@@ -1,0 +1,12 @@
+#!/bin/sh -e
+
+cat <<EOF
+NOTE: s6-linux-init-maker must be executed to populate /etc/s6/current
+
+The following example creates an emergency tty on tty7:
+
+s6-linux-init-maker -1 \\
+    -G "/bin/getty 38400 tty7" \\
+    -c /etc/s6-linux-init/current \\
+    /etc/s6-linux-init/current
+EOF

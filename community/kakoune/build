@@ -1,0 +1,9 @@
+#!/bin/sh -e
+
+make \
+    DESTDIR="$1" \
+    PREFIX=/usr \
+    libexecdir="$1/usr/lib" \
+    version="v$2" \
+    gzip_man=no \
+    all install

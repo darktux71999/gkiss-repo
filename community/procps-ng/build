@@ -1,0 +1,10 @@
+#!/bin/sh -e
+
+./configure \
+    --prefix=/usr \
+    --sbindir=/usr/bin \
+    --disable-nls \
+    --disable-w
+
+make CCLD="${CC:-cc} -all-static"
+make DESTDIR="$1" install

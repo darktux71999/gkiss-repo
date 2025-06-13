@@ -1,0 +1,6 @@
+cairo
+jbig2dec
+libmupdf
+meson make
+pkgconf make
+zathura

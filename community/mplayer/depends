@@ -1,0 +1,23 @@
+alsa-lib
+fontconfig
+freetype-harfbuzz
+gnutls
+lame
+libX11
+libXScrnSaver
+libXext
+libXinerama
+libXxf86vm
+libass
+libdvdread
+libjpeg-turbo
+libogg
+libpng
+libvorbis
+libvpx
+mesa
+ncurses
+opus
+pkgconf make
+x264
+xvidcore

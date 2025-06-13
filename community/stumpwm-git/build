@@ -1,0 +1,46 @@
+#!/usr/bin/sbcl --script
+;; -*- mode: lisp -*-
+
+(declaim (sb-ext:muffle-conditions cl:warning))
+
+(require :uiop)
+
+;; Yes, this is a hack, but there really isn't any other way to do
+;; this in a *nice* way.
+;; It's a known problem in the CL world.
+(let ((sbclrc (merge-pathnames (car (directory "~/")) ".sbclrc")))
+  (if (uiop:file-exists-p sbclrc)
+      (load sbclrc)))
+
+(setq *dest-dir* (nth 1 sb-ext:*posix-argv*))
+(setq *version* (nth 2 sb-ext:*posix-argv*))
+
+#-QUICKLISP
+(progn
+  (print
+   "You need to install quicklisp:
+
+$ curl -LO https://beta.quicklisp.org/quicklisp.lisp
+$ sbcl --noinform --load quicklisp.lisp --eval '(quicklisp-quickstart:install)' --eval '(quit)'
+$ sbcl --noinform --load ~/quicklisp/setup.lisp --eval '(ql:add-to-init-file)' --eval '(quit)'
+
+Then build and install this package.")
+  (exit 1))
+
+(ql:quickload '(:clx :cl-ppcre :alexandria))
+
+(let ((cmds
+        `(("touch nostrip")
+          ("autoreconf -vif")
+          ("./configure"
+           " --prefix=/usr"
+           " --with-lisp=sbcl"
+           " --with-module-dir=/usr/share/stumpwm/contrib")
+
+          ("make -j1 destdir='" ,*dest-dir* "'")
+          ("make -j1 destdir='" ,*dest-dir* "' install")
+
+          ("mkdir -p " ,*dest-dir* "/usr/share/doc/stumpwm")
+          ("cp sample-stumpwmrc.lisp " ,*dest-dir* "/usr/share/doc/stumpwm"))))
+  (dolist (cmd (mapcar (lambda (lst) (format nil "~{~a~}" lst)) cmds))
+    (print (uiop:run-program cmd :output *standard-output*))))

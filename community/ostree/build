@@ -1,0 +1,22 @@
+#!/bin/sh -e
+
+cat >> src/libotutil/otutil.h <<EOF
+#ifndef ALLPERMS
+#define ALLPERMS (S_ISUID|S_ISGID|S_ISVTX|S_IRWXU|S_IRWXG|S_IRWXO)/* 07777 */
+#endif
+EOF
+
+sed '/<linux\/prctl.h\>/d' src/libotutil/ot-unix-utils.c > _
+mv -f _ src/libotutil/ot-unix-utils.c
+
+./configure \
+    --prefix=/usr \
+    --libexecdir=/usr/lib \
+    --sysconfdir=/etc \
+    --disable-man \
+    --disable-rofiles-fuse \
+    --with-soup=no \
+    --with-curl=yes
+
+make
+make DESTDIR="$1" install

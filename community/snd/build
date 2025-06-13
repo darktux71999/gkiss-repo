@@ -1,0 +1,13 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+./configure \
+    --prefix=/usr \
+    --with-alsa \
+    --with-gl \
+    --with-gmp \
+    --with-motif
+
+make
+make install

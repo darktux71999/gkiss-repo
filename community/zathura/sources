@@ -1,0 +1,5 @@
+https://pwmt.org/projects/zathura/download/zathura-0.5.11.tar.xz
+patches/remove_gettext.patch
+files/zathura.1
+files/zathura-sandbox.1
+files/zathurarc.5

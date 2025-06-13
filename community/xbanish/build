@@ -1,0 +1,10 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+
+make
+make \
+    PREFIX=/usr \
+    MANDIR=/usr/share/man/man1 \
+    install

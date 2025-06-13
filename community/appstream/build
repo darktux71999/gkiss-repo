@@ -1,0 +1,22 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+cd "AppStream-$2"
+
+:>po/meson.build
+:>docs/meson.build
+
+patch -p1 < ../no-i18n.patch
+
+meson setup \
+    -Dprefix=/usr \
+    -Dlibexecdir=/usr/lib \
+    -Dcompose=false \
+    -Dstemming=false \
+    -Dgir=false \
+    -Dsystemd=false \
+    output
+
+ninja -C output
+ninja -C output install

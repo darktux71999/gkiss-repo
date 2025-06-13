@@ -1,0 +1,7 @@
+#!/bin/sh -e
+
+./configure \
+    --prefix=/usr
+
+make CFLAGS=-D__USE_XOPEN2K
+make DESTDIR="$1" install

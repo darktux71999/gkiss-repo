@@ -1,0 +1,16 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+meson setup \
+    -Dprefix=/usr \
+    -Dnls=false \
+    -Dbacktrace=false \
+    -Dtre=false \
+    -Didn=false \
+    -Dlibcss=false \
+    -Dgpm=false \
+    output
+
+ninja -C output
+ninja -C output install

@@ -1,0 +1,5 @@
+cmake make
+lcms
+libpng
+tiff
+zlib

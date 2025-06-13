@@ -1,0 +1,17 @@
+appstream
+bubblewrap
+curl
+fuse
+gdk-pixbuf
+glib
+gpgme
+json-glib
+libarchive
+libassuan
+libgpg-error
+libseccomp
+libxml2
+meson make
+ostree
+python make
+python-packaging make

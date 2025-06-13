@@ -1,0 +1,27 @@
+#!/bin/sh -e
+
+# A system luarocks installation can interfere with the build.
+unset LUA_CPATH LUA_PATH
+
+# Due to some changes in the package manager/pigz, we have to...
+unset DESTDIR
+mkdir -p bin
+ln -s /usr/bin/pigz "$PWD/bin/gunzip"
+export PATH="$PWD/bin:$PATH"
+
+# Remove mandatory gettext dependency.
+sed -i 's/^/#/' src/nvim/po/CMakeLists.txt
+
+find .deps/ -type f -name \*no-extract |
+    while read -r s; do
+        mv "$s" "${s%\?no-extract}"
+    done
+
+make \
+    CMAKE_BUILD_TYPE=Release \
+    CMAKE_INSTALL_PREFIX=/usr
+
+make DESTDIR="$1" install
+
+# CMAKE_INSTALL_LIBDIR is not respected
+mv -f "$1/usr/lib64" "$1/usr/lib"

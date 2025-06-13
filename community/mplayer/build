@@ -1,0 +1,27 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+if ! command -v yasm; then (
+    cd yasm
+    ./configure \
+        --prefix=/
+
+    make
+    make DESTDIR="$PWD/../junk" install
+); fi
+
+export PATH="$PWD/junk/bin:$PATH"
+
+./configure \
+    --prefix=/usr \
+    --disable-vidix \
+    --disable-ossaudio \
+    --disable-fribidi \
+    --disable-ffmpeg_a
+
+make
+make install
+
+mkdir -p "$1/etc/mplayer/"
+cp etc/example.conf "$1/etc/mplayer/mplayer.conf"

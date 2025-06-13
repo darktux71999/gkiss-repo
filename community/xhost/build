@@ -1,0 +1,13 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+./configure \
+    --prefix=/usr
+
+# Remove gettext requirement
+sed "/^all-am:/s/\$(DATA)//" Makefile > _
+mv -f _ Makefile
+
+make
+make install
