@@ -1,0 +1,23 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+sed -i "/subdir('po')/d" meson.build
+sed -i "/subdir('vala')/d" meson.build
+
+meson setup \
+    -Dprefix=/usr \
+    -Ddaemon=false \
+    -Dclient=true \
+    -Ddoxygen=false \
+    -Dman=false \
+    -Dtests=false \
+    -Dbashcompletiondir=no \
+    -Dzshcompletiondir=no \
+    -Dalsa=enabled \
+    -Ddbus=disabled \
+    -Dsystemd=disabled \
+    output
+
+ninja -C output
+ninja -C output install

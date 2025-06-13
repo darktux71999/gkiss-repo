@@ -1,0 +1,16 @@
+#!/bin/sh -e
+
+mkdir -pv build
+cd build
+cmake ../ \
+    -DCMAKE_BUILD_TYPE=RELEASE \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DSYSCONFDIR=/etc \
+    -DLUA_INCLUDE_DIR=/usr/include/luajit-2.1 \
+    -DLUA_LIBRARY=/usr/lib/libluajit-5.1.so \
+    -DLUA_EXECUTABLE=/usr/bin/luajit \
+    -DCMAKE_POLICY_VERSION_MINIMUM=3.5
+  make
+
+make DESTDIR=$1 install
+

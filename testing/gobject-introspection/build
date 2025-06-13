@@ -1,0 +1,6 @@
+#!/bin/sh -e
+
+kiss-meson build
+	meson compile -C build
+	DESTDIR=$1 meson install --no-rebuild -C build
+

@@ -1,0 +1,38 @@
+diff --git a/meson.build b/meson.build
+index fa6b7ff..c6c3c64 100644
+--- a/meson.build
++++ b/meson.build
+@@ -112,7 +112,6 @@ gio_unix_dep = dependency('gio-unix-2.0')
+ json_glib_dep = dependency('json-glib-1.0')
+ fuse3_dep = dependency('fuse3', version: '>= 3.10.0')
+ gdk_pixbuf_dep = dependency('gdk-pixbuf-2.0')
+-gst_pbutils_dep = dependency('gstreamer-pbutils-1.0')
+ geoclue_dep = dependency(
+   'libgeoclue-2.0',
+   version: '>= 2.5.2',
+diff --git a/src/meson.build b/src/meson.build
+index f5f53e5..b35ea3a 100644
+--- a/src/meson.build
++++ b/src/meson.build
+@@ -201,20 +201,6 @@ xdp_validate_icon = executable(
+   install_dir: libexecdir,
+ )
+ 
+-validate_sound_c_args = ['-D_GNU_SOURCE=1']
+-if bwrap.found()
+-  validate_sound_c_args += '-DHELPER="@0@"'.format(bwrap.full_path())
+-endif
+-
+-xdp_validate_sound = executable(
+-  'xdg-desktop-portal-validate-sound',
+-  'validate-sound.c',
+-  dependencies: [gst_pbutils_dep],
+-  c_args: validate_sound_c_args,
+-  install: true,
+-  install_dir: libexecdir,
+-)
+-
+ configure_file(
+   input: 'xdg-desktop-portal-rewrite-launchers.service.in',
+   output: '@BASENAME@',
+

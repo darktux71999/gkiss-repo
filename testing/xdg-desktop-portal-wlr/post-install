@@ -1,0 +1,6 @@
+#!/bin/sh
+
+cat <<EOF
+NOTE: The XDG_CURRENT_DESKTOP variable must be set to your WM, eg. in ~/.profile
+      export XDG_CURRENT_DESKTOP=sway
+EOF

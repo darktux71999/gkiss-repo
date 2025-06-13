@@ -1,0 +1,18 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+patch -p1 < no-xdp-validate-sound.patch
+
+meson \
+    --prefix=/usr \
+    --libexecdir=/usr/lib \
+    -Dgeoclue=disabled \
+    -Dsystemd=disabled \
+    -Dtests=disabled \
+    . output
+
+ninja -C output
+ninja -C output install
+
+rm -rf "$1/usr/lib/systemd"

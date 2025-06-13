@@ -1,0 +1,8 @@
+bubblewrap
+flatpak make
+fuse
+gdk-pixbuf
+glib
+json-glib
+meson make
+pipewire

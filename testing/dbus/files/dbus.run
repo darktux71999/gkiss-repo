@@ -1,0 +1,4 @@
+#!/bin/sh
+install -m755 -o messagebus -g messagebus -d /run/dbus
+dbus-uuidgen --ensure=/etc/machine-id
+exec dbus-daemon --system --nofork --nopidfile

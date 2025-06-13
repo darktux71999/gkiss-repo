@@ -1,0 +1,8 @@
+#!/bin/sh -e
+
+set -x
+
+./configure --prefix=/usr --with-lua-include=/usr/include
+make
+
+make DESTDIR=$1 install

@@ -1,0 +1,3 @@
+libsndfile
+meson   make
+pkgconf make

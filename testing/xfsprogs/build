@@ -1,0 +1,7 @@
+#!/bin/sh -e
+
+make
+
+
+make DESTDIT=$1 install
+make DESTDIT=$1 install-dev

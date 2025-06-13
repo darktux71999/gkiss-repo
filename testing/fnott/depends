@@ -1,0 +1,10 @@
+dbus
+fcft
+fontconfig
+libpng
+meson make
+pixman
+scdoc make
+tllist make
+wayland
+wayland-protocols

@@ -1,0 +1,9 @@
+luajit
+libxdg-basedir
+xcb-util-keysyms
+xcb-util-xrm
+xcb-util-image 
+xcb-util-cursor 
+xcb-util-renderutil
+luarocks
+imagemagick

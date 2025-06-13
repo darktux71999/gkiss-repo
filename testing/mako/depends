@@ -1,0 +1,8 @@
+basu
+cairo
+gdk-pixbuf
+glib
+meson build
+pango
+wayland
+wayland-protocols
