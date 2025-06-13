@@ -1,0 +1,10 @@
+#!/bin/sh -e
+
+./configure \
+    --prefix=/usr \
+    --disable-werror
+
+make
+make DESTDIR="$1" install
+
+rm -f "$1/usr/share/man/man3/crypt"*".3"

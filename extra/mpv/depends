@@ -1,0 +1,17 @@
+alsa-lib
+ffmpeg
+freetype-harfbuzz
+libXScrnSaver
+libXext
+libXinerama
+libXpresent
+libXrandr
+libass
+libplacebo
+libva
+libxkbcommon
+linux-headers make
+mesa
+meson make
+pkgconf make
+python-docutils  make
