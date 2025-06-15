@@ -1,0 +1,619 @@
+--- a/builtins/mkbuiltins.c
++++ b/builtins/mkbuiltins.c
+@@ -59,10 +59,10 @@
+
+ #if defined (HAVE_UNISTD_H)
+ #  include <unistd.h>
+-#endif
+-
+-static char *xmalloc (), *xrealloc ();
+-
++#endif /* HAVE_UNISTD_H */
++
++#include <stddef.h> /* For size_t */
++static void *xmalloc (size_t);
++static void *xrealloc (void *, size_t);
+ static BUILTIN_DESC *copy_builtin PARAMS((BUILTIN_DESC *));
+ static BUILTIN_DESC *save_builtin PARAMS((BUILTIN_DESC *));
+ static ARRAY *array_create PARAMS((int));
+@@ -201,31 +201,29 @@
+
+ static int in_builtin_def = 0;
+
+-void extract_info ();
+-void builtin_error (), file_error (), line_error (), perror_with_exit ();
+-void write_file_headers ();
+-void write_file_footers ();
+-void write_ifdefs (), write_endifs ();
+-void write_documentation ();
+-void write_longdocs ();
+-void write_builtins ();
+-void free_defs ();
+-void add_documentation ();
+-void must_be_building ();
+-int write_helpfiles ();
+-void remove_trailing_whitespace ();
++/* Forward declarations for functions in this file. */
++static void extract_info (char *, FILE *, FILE *);
++static void file_error (const char *);
++static void line_error (DEF_FILE *, const char *, ...);
++static void perror_with_exit (const char *);
++static void write_file_headers (FILE *, FILE *);
++static void write_file_footers (FILE *, FILE *);
++static void write_ifdefs (FILE *, char **);
++static void write_endifs (FILE *, char **);
++static void write_documentation (FILE *, char **, int, int);
++static void write_longdocs (FILE *, ARRAY *);
++static void write_builtins (DEF_FILE *, FILE *, FILE *);
++static int write_helpfiles (ARRAY *);
++static void free_defs (DEF_FILE *);
++static void add_documentation (DEF_FILE *, char *);
++static void must_be_building (const char *, DEF_FILE *);
++static void remove_trailing_whitespace (char *);
+ static char *strip_whitespace ();
+ static char *get_arg ();
+-
+-static int is_special_builtin ();
+-static int is_assignment_builtin ();
+-static int is_localvar_builtin ();
+-static int is_posix_builtin ();
+-static int is_arrayvar_builtin ();
+-static int _find_in_table ();
+-
+-char *distring ();
++static int is_special_builtin (const char *);
++static int is_assignment_builtin (const char *);
++static int is_localvar_builtin (const char *);
++static int is_posix_builtin (const char *);
++static int is_arrayvar_builtin (const char *);
++static int _find_in_table (const char *, const char **);
+
+ /* The list of all builtins that we have defined. */
+ static ARRAY *defined_builtins = (ARRAY *)NULL;
+@@ -233,10 +231,7 @@
+ static ARRAY *saved_builtins = (ARRAY *)NULL;
+
+ int
+-main (argc, argv)
+-     int argc;
+-     char **argv;
++main (int argc, char **argv)
+ {
+   int i, arg_index;
+   char *error_directory;
+@@ -384,9 +379,7 @@
+ }
+
+ ARRAY *
+-array_create (width)
+-     int width;
++array_create (int width)
+ {
+   ARRAY *array;
+
+@@ -404,9 +397,7 @@
+ }
+
+ ARRAY *
+-copy_string_array (array)
+-     ARRAY *array;
++copy_string_array (ARRAY *array)
+ {
+   ARRAY *copy;
+   int i;
+@@ -431,10 +422,7 @@
+ }
+
+ void
+-array_add (element, array)
+-     char *element;
+-     ARRAY *array;
++array_add (char *element, ARRAY *array)
+ {
+   if (array->sindex + 1 >= array->size)
+
+@@ -445,9 +433,7 @@
+ }
+
+ void
+-array_free (array)
+-     ARRAY *array;
++array_free (ARRAY *array)
+ {
+   register int i;
+
+@@ -494,9 +480,7 @@
+ }
+
+ static int
+-find_directive (directive)
+-     char *directive;
++find_directive (char *directive)
+ {
+   int i;
+
+@@ -525,14 +509,8 @@
+ }
+
+ static void
+-extract_info (filename, structfile, externfile)
+-     char *filename;
+-     FILE *structfile, *externfile;
++extract_info (char *filename, FILE *structfile, FILE *externfile)
+ {
+-  if (0)
+-    file_error (filename);
+-
+   DEF_FILE *defs;
+   struct stat file_stats;
+   char *buffer, *line, *directive, *arg;
+@@ -666,9 +644,7 @@
+ }
+
+ static void
+-free_builtin (builtin)
+-     BUILTIN_DESC *builtin;
++free_builtin (BUILTIN_DESC *builtin)
+ {
+   if (builtin)
+ 	{
+@@ -689,12 +665,8 @@
+ }
+
+ static void
+-free_defs (defs)
+-     DEF_FILE *defs;
++free_defs (DEF_FILE *defs)
+ {
+-  if (0)
+-    line_error (defs, "foo %s", "bar");
+-
+   free_builtin (defs->current_builtin);
+   array_free (defs->dependencies);
+   array_free (defs->productions);
+@@ -722,9 +694,7 @@
+ }
+
+ static char *
+-strip_whitespace (string)
+-     char *string;
++strip_whitespace (char *string)
+ {
+   remove_trailing_whitespace (string);
+   return (string + strspn (string, " \t\n"));
+@@ -734,13 +704,8 @@
+ /* Remove trailing whitespace from STRING. */
+ static void
+ remove_trailing_whitespace (string)
+-     char *string;
++     char *string; /* must be modifiable */
+ {
+-  if (0)
+-    {
+-      strip_whitespace (string);
+-      get_arg ("foo", (DEF_FILE *)NULL, string);
+-    }
+   register int i;
+
+   i = strlen (string) - 1;
+@@ -753,11 +718,7 @@
+ }
+
+ static char *
+-get_arg (for_whom, defs, string)
+-     char *for_whom;
+-     DEF_FILE *defs;
+-     char *string;
++get_arg (char *for_whom, DEF_FILE *defs, char *string)
+ {
+   char *new;
+
+@@ -769,14 +730,8 @@
+ }
+
+ static void
+-must_be_building (directive, defs)
+-     char *directive;
+-     DEF_FILE *defs;
++must_be_building (const char *directive, DEF_FILE *defs)
+ {
+-  if (0)
+-    current_builtin (directive, defs);
+-
+   if (in_builtin_def == 0)
+ 	line_error (defs, "%s must be inside of a $BUILTIN block", directive);
+ }
+@@ -792,10 +747,7 @@
+ }
+
+ static void
+-add_documentation (defs, line)
+-     DEF_FILE *defs;
+-     char *line;
++add_documentation (DEF_FILE *defs, char *line)
+ {
+   BUILTIN_DESC *new;
+
+@@ -813,11 +765,7 @@
+ }
+
+ int
+-builtin_handler (self, defs, arg)
+-     char *self;
+-     DEF_FILE *defs;
+-     char *arg;
++builtin_handler (char *self, DEF_FILE *defs, char *arg)
+ {
+   char *name, *p;
+   BUILTIN_DESC *new;
+@@ -865,11 +813,7 @@
+ }
+
+ int
+-function_handler (self, defs, arg)
+-     char *self;
+-     DEF_FILE *defs;
+-     char *arg;
++function_handler (char *self, DEF_FILE *defs, char *arg)
+ {
+   BUILTIN_DESC *b;
+
+@@ -890,11 +834,7 @@
+ }
+
+ int
+-docname_handler (self, defs, arg)
+-     char *self;
+-     DEF_FILE *defs;
+-     char *arg;
++docname_handler (char *self, DEF_FILE *defs, char *arg)
+ {
+   BUILTIN_DESC *b;
+
+@@ -910,11 +850,7 @@
+ }
+
+ int
+-short_doc_handler (self, defs, arg)
+-     char *self;
+-     DEF_FILE *defs;
+-     char *arg;
++short_doc_handler (char *self, DEF_FILE *defs, char *arg)
+ {
+   BUILTIN_DESC *b;
+
+@@ -931,11 +867,7 @@
+ }
+
+ int
+-comment_handler (self, defs, arg)
+-     char *self;
+-     DEF_FILE *defs;
+-     char *arg;
++comment_handler (char *self, DEF_FILE *defs, char *arg)
+ {
+   /* Do nothing with this line. */
+   return 0;
+@@ -943,11 +875,7 @@
+
+ /* Handle the $DEPENDS_ON directive. */
+ int
+-depends_on_handler (self, defs, arg)
+-     char *self;
+-     DEF_FILE *defs;
+-     char *arg;
++depends_on_handler (char *self, DEF_FILE *defs, char *arg)
+ {
+   BUILTIN_DESC *b;
+
+@@ -961,11 +889,7 @@
+
+ /* Handle the $PRODUCES directive. */
+ int
+-produces_handler (self, defs, arg)
+-     char *self;
+-     DEF_FILE *defs;
+-     char *arg;
++produces_handler (char *self, DEF_FILE *defs, char *arg)
+ {
+   char *production;
+
+@@ -995,11 +919,7 @@
+ }
+
+ int
+-end_handler (self, defs, arg)
+-     char *self;
+-     DEF_FILE *defs;
+-     char *arg;
++end_handler (char *self, DEF_FILE *defs, char *arg)
+ {
+   must_be_building (self, defs);
+
+@@ -1014,15 +934,8 @@
+
+ /* Print an error message about a line in a file and exit. */
+ static void
+-line_error (defs, format, arg1, arg2)
+-     DEF_FILE *defs;
+-     char *format, *arg1, *arg2;
++line_error (DEF_FILE *defs, const char *format, ...)
+ {
+-  if (0)
+-    {
+-      free_defs (defs);
+-    }
+   fprintf (stderr, "%s: line %d: ", defs->filename, defs->line_number);
+   fprintf (stderr, format, arg1, arg2);
+   fprintf (stderr, "\n");
+@@ -1030,12 +943,8 @@
+ }
+
+ static void
+-file_error (filename)
+-     char *filename;
++file_error (const char *filename)
+ {
+-  if (0)
+-    perror_with_exit ("foo");
+-
+   perror (filename);
+   exit (2);
+ }
+@@ -1044,22 +953,18 @@
+ }
+
+ static void *
+-xmalloc (bytes)
+-     int bytes;
++xmalloc (size_t bytes)
+ {
+   void *temp;
+
+   temp = malloc (bytes);
+   if (temp == 0)
+-    {
+-      fprintf (stderr, "mb: out of memory\n");
+-      exit (2);
+-    }
++    file_error ("xmalloc");
+   return (temp);
+ }
+
+ static void *
+-xrealloc (pointer, bytes)
+-     char *pointer;
+-     int bytes;
++xrealloc (void *pointer, size_t bytes)
+ {
+   void *temp;
+
+@@ -1067,11 +972,7 @@
+ 	  temp = realloc (pointer, bytes);
+ 	else
+ 	  temp = malloc (bytes);
+-      if (temp == 0)
+-	{
+-	  fprintf (stderr, "mb: out of memory\n");
+-	  exit (2);
+-	}
++      if (temp == 0)
++	file_error ("xrealloc");
+   return (temp);
+ }
+
+@@ -1087,9 +988,7 @@
+ }
+
+ static BUILTIN_DESC *
+-copy_builtin (builtin)
+-     BUILTIN_DESC *builtin;
++copy_builtin (BUILTIN_DESC *builtin)
+ {
+   BUILTIN_DESC *new;
+
+@@ -1109,9 +1008,7 @@
+ }
+
+ static BUILTIN_DESC *
+-save_builtin (builtin)
+-     BUILTIN_DESC *builtin;
++save_builtin (BUILTIN_DESC *builtin)
+ {
+   if (saved_builtins == 0)
+ 	saved_builtins = array_create (sizeof (BUILTIN_DESC *));
+@@ -1187,14 +1084,8 @@
+ }
+
+ static void
+-write_file_headers (structfile, externfile)
+-     FILE *structfile, *externfile;
++write_file_headers (FILE *structfile, FILE *externfile)
+ {
+-  if (0)
+-    {
+-      write_builtins ((DEF_FILE *)NULL, structfile, externfile);
+-    }
+-
+   fprintf (structfile, "/* builtext.h - a list of builtin commands */\n");
+   fprintf (structfile, "/* Not to be changed by the user. */\n\n");
+   fprintf (structfile, "#if defined (HAVE_CONFIG_H)\n");
+@@ -1214,14 +1105,8 @@
+ }
+
+ static void
+-write_file_footers (structfile, externfile)
+-     FILE *structfile, *externfile;
++write_file_footers (FILE *structfile, FILE *externfile)
+ {
+-  if (0)
+-    {
+-      write_longdocs (structfile, (ARRAY *)NULL);
+-    }
+-
+   fprintf (structfile, "extern struct builtin *builtins[];\n\n");
+   fprintf (structfile, "#endif /* _BUILTEXT_H_ */\n");
+   fclose (structfile);
+@@ -1231,16 +1116,8 @@
+
+ /* Write out the list of builtins, and the declarations for the
+    functions. */
+-static void
+-write_builtins (defs, structfile, externfile)
+-     DEF_FILE *defs;
+-     FILE *structfile, *externfile;
++static void write_builtins (DEF_FILE *defs, FILE *structfile, FILE *externfile)
+ {
+-  if (0)
+-    {
+-      write_file_footers (structfile, externfile);
+-      write_dummy_declarations (structfile, (ARRAY *)NULL);
+-    }
+   register int i;
+   int j;
+   char *t, *tn;
+@@ -1336,16 +1213,8 @@
+ }
+
+ static void
+-write_longdocs (stream, builtins)
+-     FILE *stream;
+-     ARRAY *builtins;
++write_longdocs (FILE *stream, ARRAY *builtins)
+ {
+-  if (0)
+-    {
+-      write_ifdefs (stream, (char **)NULL);
+-      write_endifs (stream, (char **)NULL);
+-      write_helpfiles (builtins);
+-    }
+   BUILTIN_DESC *builtin;
+   int i;
+   size_t l;
+@@ -1375,10 +1244,7 @@
+ }
+
+ static void
+-write_dummy_declarations (stream, builtins)
+-     FILE *stream;
+-     ARRAY *builtins;
++write_dummy_declarations (FILE *stream, ARRAY *builtins)
+ {
+   BUILTIN_DESC *builtin;
+   int i;
+@@ -1402,14 +1268,8 @@
+
+ /* Write the #ifdefs for a list of names. */
+ static void
+-write_ifdefs (stream, defines)
+-     FILE *stream;
+-     char **defines;
++write_ifdefs (FILE *stream, char **defines)
+ {
+-  if (0)
+-    {
+-      write_longdocs (stream, (ARRAY *)NULL);
+-    }
+   register int i;
+
+   if (defines)
+@@ -1433,14 +1293,8 @@
+
+ /* Write the #endifs for a list of names. */
+ static void
+-write_endifs (stream, defines)
+-     FILE *stream;
+-     char **defines;
++write_endifs (FILE *stream, char **defines)
+ {
+-  if (0)
+-    {
+-      write_documentation (stream, defines, i, i);
+-    }
+   register int i;
+
+   if (defines)
+@@ -1460,16 +1314,8 @@
+
+ /* Write out the documentation for a builtin. */
+ static void
+-write_documentation (stream, documentation, indentation, flags)
+-     FILE *stream;
+-     char **documentation;
+-     int indentation;
+-     int flags;
++write_documentation (FILE *stream, char **documentation, int indentation, int flags)
+ {
+-  if (0)
+-    {
+-      write_endifs (stream, documentation);
+-    }
+   register int i;
+   int j, len, has_texinfo, helpfile, plaintext;
+   char *indent, *p, *t;
+@@ -1590,12 +1436,8 @@
+ }
+
+ static int
+-write_helpfiles (builtins)
+-     ARRAY *builtins;
++write_helpfiles (ARRAY *builtins)
+ {
+-  if (0)
+-    _find_in_table ("foo", (const char **)NULL);
+-
+   BUILTIN_DESC *builtin;
+   int i;
+   char *helpfile, *bname;
+@@ -1632,10 +1474,7 @@
+ }
+
+ static int
+-_find_in_table (name, name_table)
+-     const char *name;
+-     const char **name_table;
++_find_in_table (const char *name, const char **name_table)
+ {
+   int i;
+
+@@ -1644,9 +1483,7 @@
+ }
+
+ static int
+-is_special_builtin (name)
+-     const char *name;
++is_special_builtin (const char *name)
+ {
+   return (_find_in_table (name, special_builtins));
+ }
+@@ -1654,9 +1491,7 @@
+ static int
+ is_assignment_builtin (name)
+      const char *name;
+-{
+-  return (_find_in_table (name, assignment_builtins));
+-}
++{ return (_find_in_table (name, assignment_builtins)); }
+
+ static int
+ is_localvar_builtin (name)
+@@ -1665,18 +1500,12 @@
+
+ static int
+ is_posix_builtin (name)
+      const char *name;
+-{
+-  return (_find_in_table (name, posix_builtins));
+-}
++{ return (_find_in_table (name, posix_builtins)); }
+
+ static int
+ is_arrayvar_builtin (name)
+      const char *name;
+-{
+-  return (_find_in_table (name, arrayvar_builtins));
+-}
++{ return (_find_in_table (name, arrayvar_builtins)); }
+
+ #if 0
+ /* For shell debugging. */

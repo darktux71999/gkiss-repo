@@ -1,0 +1,7 @@
+#!/bin/sh -e
+
+./configure --prefix=/usr    \
+            --disable-static \
+            --docdir=/usr/share/doc/gettext-0.24
+make
+make DESTDIR="$1" prefix=/usr install
