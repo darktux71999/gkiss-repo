@@ -12,7 +12,8 @@ done
 cmake -B build \
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DCMAKE_BUILD_TYPE=Release \
-    -DGLM_INCLUDE_DIR=./glm
+    -DGLM_INCLUDE_DIR=./glm \
+    -DCMAKE_POLICY_VERSION_MINIMUM=3.5 
 
 cmake --build   build
 cmake --install build
