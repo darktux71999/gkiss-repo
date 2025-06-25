@@ -1,0 +1,85 @@
+#!/bin/sh -e
+
+# Versión Final: Combinando la lógica de parches de Arch
+# con el método de instalación manual de KISS.
+
+set -ex
+
+# --- VARIABLES ---
+DESTDIR="$1"
+pkgver="$2"
+_pkg="NVIDIA-Linux-x86_64-${pkgver}"
+srcdir="$PWD"
+
+# --- EXTRACCIÓN Y PARCHES ---
+
+# 1. Extraer el instalador .run (como en tu ejemplo)
+sh "${_pkg}.run" --extract-only
+
+# 2. Entrar al directorio extraído
+cd "${_pkg}"
+
+# 3. Aplicar parches de compatibilidad (nuestra lógica de Arch)
+echo "Aplicando parches de compatibilidad del kernel..."
+#patch -p1 < "${srcdir}/kernel-6.10.patch"
+#patch -p1 < "${srcdir}/kernel-6.12.patch"
+#patch -p1 < "${srcdir}/nvidia-470xx-fix-linux-6.13.patch"
+#patch -p1 < "${srcdir}/nvidia-470xx-fix-linux-6.14.patch"
+#patch -p1 < "${srcdir}/nvidia-470xx-fix-linux-6.15.patch"
+patch -p1 < "${srcdir}/0001-Fix-conftest-to-ignore-implicit-function-declaration.patch"
+patch -p1 < "${srcdir}/0002-Fix-conftest-to-use-a-short-wchar_t.patch"
+patch -p1 < "${srcdir}/0003-Fix-conftest-to-use-nv_drm_gem_vmap-which-has-the-se.patch"
+echo "Parches aplicados."
+
+# --- COMPILACIÓN DEL MÓDULO ---
+
+# 4. Construir el módulo del kernel (nuestra lógica de Arch)
+echo "Construyendo el módulo del kernel..."
+make -C kernel SYSSRC=/usr/lib/modules/"$(uname -r)"/build module
+echo "Módulo construido."
+
+# --- INSTALACIÓN MANUAL ---
+
+# 5. Instalar los archivos en DESTDIR (lógica de tu ejemplo)
+echo "Instalando archivos en ${DESTDIR}..."
+
+# Crear directorios
+install -d -m755 \
+    "$DESTDIR/usr/bin" \
+    "$DESTDIR/usr/lib/xorg/modules/drivers" \
+    "$DESTDIR/usr/lib/nvidia/xorg" \
+    "$DESTDIR/usr/lib/firmware" \
+    "$DESTDIR/usr/share/man/man1" \
+    "$DESTDIR/usr/share/glvnd/egl_vendor.d" \
+    "$DESTDIR/etc/OpenCL/vendors" \
+    "$DESTDIR/usr/share/X11/xorg.conf.d" \
+    "/etc/udev/rules.d" \
+    "/lib/modules/$(uname -r)/extramodules"
+
+# Instalar binarios
+install -m755 nvidia-smi "${DESTDIR}/usr/bin/"
+install -m755 nvidia-settings "${DESTDIR}/usr/bin/"
+install -m755 nvidia-modprobe "${DESTDIR}/usr/bin/"
+chmod 4755 "${DESTDIR}/usr/bin/nvidia-modprobe" # Permiso SUID
+
+# Instalar librerías (lista adaptada del PKGBUILD para 470xx)
+install -m755 libnvidia-glcore.so."$pkgver" "$DESTDIR/usr/lib/"
+install -m755 libnvidia-tls.so."$pkgver" "$DESTDIR/usr/lib/"
+install -m755 libnvidia-glsi.so."$pkgver" "$DESTDIR/usr/lib/"
+# ... (aquí necesitaríamos la lista completa de librerías para la v470)
+# ... por ahora, esto es un ejemplo. La lista del PKGBUILD es la referencia.
+
+# Instalar el driver de Xorg y módulos
+install -m755 nvidia_drv.so "$DESTDIR/usr/lib/xorg/modules/drivers/"
+install -m755 libglx.so."$pkgver" "$DESTDIR/usr/lib/nvidia/xorg/"
+
+# Instalar el módulo del kernel (.ko)
+install -m644 kernel/nvidia.ko "$DESTDIR/lib/modules/$(uname -r)/extramodules/"
+install -m644 kernel/nvidia-uvm.ko "$DESTDIR/lib/modules/$(uname -r)/extramodules/"
+install -m644 kernel/nvidia-modeset.ko "$DESTDIR/lib/modules/$(uname -r)/extramodules/"
+
+# Instalar archivos de configuración
+install -Dm644 "${srcdir}/nvidia-drm-outputclass.conf.txt" "${DESTDIR}/usr/share/X11/xorg.conf.d/10-nvidia-drm.conf"
+install -Dm644 "${srcdir}/nvidia-470xx.rules.txt" "${DESTDIR}/etc/udev/rules.d/60-nvidia.rules"
+
+echo "Instalación manual finalizada."

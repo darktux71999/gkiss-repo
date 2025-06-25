@@ -1,0 +1,24 @@
+# El instalador de NVIDIA
+https://us.download.nvidia.com/XFree86/Linux-x86_64/470.256.02/NVIDIA-Linux-x86_64-470.256.02.run
+
+# Parches de compatibilidad del Kernel
+# (El orden no importa aquí, pero sí en el script build)
+files/kernel-6.4.patch
+files/kernel-6.5.patch
+files/kernel-6.6.patch
+files/kernel-6.10.patch
+files/kernel-6.12.patch
+files/kernel-6.1.76_6.6.15_6.7.3.patch
+files/nvidia-470xx-fix-linux-6.13.patch
+files/nvidia-470xx-fix-linux-6.14.patch
+files/nvidia-470xx-fix-linux-6.15.patch
+
+# Otros parches y archivos de configuración
+files/0001-Fix-conftest-to-ignore-implicit-function-declaration.patch
+files/0002-Fix-conftest-to-use-a-short-wchar_t.patch
+files/0003-Fix-conftest-to-use-nv_drm_gem_vmap-which-has-the-se.patch
+##files/nvidia-470xx.rules
+#files/nvidia-470xx-utils.sysusers
+#files/nvidia-drm-outputclass.conf
+#files/systemd-homed-override.conf
+#files/systemd-suspend-override.conf
