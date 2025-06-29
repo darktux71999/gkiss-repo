@@ -1,3 +1,4 @@
+libunwind
 libglvnd     make
 bison        make
 expat
