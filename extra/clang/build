@@ -20,7 +20,7 @@ cmake -G Ninja -B build \
     -DLIBCLANG_BUILD_STATIC=ON \
     -Wno-dev
 
-ninja -j4 -C  build
+ninja -j8 -C  build
 cmake --install build
 
 # Fix up libexec location. This can't be done during
