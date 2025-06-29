@@ -1,3 +1,4 @@
+startup-notification
 luajit
 libxdg-basedir
 xcb-util-keysyms
