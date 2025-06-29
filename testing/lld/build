@@ -13,7 +13,7 @@ cmake -G Ninja -B build \
     -DCMAKE_BUILD_TYPE=Release \
     -Wno-dev
 
-ninja -j4 -C build
+ninja -j8 -C build
 cmake --install build
 
 ln -s lld "$1/usr/bin/ld"
