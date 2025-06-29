@@ -5,14 +5,14 @@ export DESTDIR="$1"
 patch -p1 < musl-stack-size.patch
 
 cd llvm
-cmake -B build \
+cmake -G Ninja -B build \
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DCMAKE_BUILD_TYPE=Release \
+    -DLLVM_ENABLE_ASSERTIONS=OFF \
     -DLLVM_BUILD_LLVM_DYLIB=ON \
     -DLLVM_LINK_LLVM_DYLIB=ON \
     -DLLVM_TARGETS_TO_BUILD="host;AMDGPU" \
     -DLLVM_ENABLE_RTTI=ON \
-    -DLLVM_HOST_TRIPLE="$(cc -dumpmachine)" \
     -DLLVM_INCLUDE_BENCHMARKS=OFF \
     -DLLVM_INCLUDE_EXAMPLES=OFF \
     -DLLVM_INCLUDE_DOCS=OFF \
@@ -21,7 +21,8 @@ cmake -B build \
     -DLLVM_ENABLE_LIBXML2=OFF \
     -Wno-dev
 
-cmake --build   build
+# Compilar con 4 hilos en paralelo
+ninja -j4 -C build
 cmake --install build
 
 # Use new llvm-config to generate a pkg-config file.

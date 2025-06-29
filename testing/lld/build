@@ -1,0 +1,19 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+mkdir -p lld/include/mach-o/
+cp \
+    libunwind/include/mach-o/compact_unwind_encoding.h \
+    lld/include/mach-o/compact_unwind_encoding.h
+
+cd lld
+cmake -G Ninja -B build \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_BUILD_TYPE=Release \
+    -Wno-dev
+
+ninja -j4 -C build
+cmake --install build
+
+ln -s lld "$1/usr/bin/ld"
