@@ -1,0 +1,3 @@
+#!/bin/sh -e 
+
+chmod -v 777 /usr/bin/kiss-meson

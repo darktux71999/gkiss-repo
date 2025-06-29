@@ -1,0 +1,5 @@
+#!/bin/sh -e
+
+mkdir -pv "$1/usr/bin"
+cp -rv kiss-meson "$1/usr/bin/"
+
