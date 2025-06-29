@@ -2,7 +2,7 @@
 
 export DESTDIR="$1"
 
-#patch -p1 < rootless_modesetting.patch
+patch -p1 < rootless_modesetting.patch
 
 # Disable tests.
 : > test/meson.build
@@ -23,8 +23,9 @@ meson setup \
     -Dglamor=true \
     -Dxorg=true \
     -Dxephyr=false \
-    -Dxdmcp=true \
+    -Dxdmcp=false \
     -Ddefault_font_path=/usr/share/fonts \
+    -Dsecure-rpc=false \
     output
 
 ninja -C output

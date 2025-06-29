@@ -2,7 +2,7 @@
 
 set -x
 
-./configure --prefix=/usr --with-lua-include=/usr/include
+./configure --prefix=/usr --with-lua-include=/usr/include/luajit-2.1/
 make
 
 make DESTDIR=$1 install
