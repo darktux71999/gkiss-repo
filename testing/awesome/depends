@@ -1,3 +1,6 @@
+xkbcomp
+libxkbcommon
+gdk-pixbuf
 startup-notification
 luajit
 libxdg-basedir
