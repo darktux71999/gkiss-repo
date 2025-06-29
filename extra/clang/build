@@ -2,13 +2,15 @@
 
 export DESTDIR="$1"
 
-patch -p1 < musl-targets.patch
+#patch -p1 < musl-targets.patch
 
 cd clang
-cmake -B build \
+cmake -G Ninja -B build \
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DCMAKE_BUILD_TYPE=Release \
     -DLLVM_ENABLE_RTTI=ON \
+    -DLLVM_USE_LINKER=lld \
+    -DLLVM_ENABLE_ASSERTIONS=OFF \
     -DLLVM_ENABLE_EH=ON \
     -DLLVM_ENABLE_LIBXML2=OFF \
     -DLLVM_INCLUDE_TESTS=OFF \
@@ -18,7 +20,7 @@ cmake -B build \
     -DLIBCLANG_BUILD_STATIC=ON \
     -Wno-dev
 
-cmake --build   build
+ninja -j4 -C  build
 cmake --install build
 
 # Fix up libexec location. This can't be done during
