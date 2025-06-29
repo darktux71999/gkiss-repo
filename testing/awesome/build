@@ -1,5 +1,8 @@
 #!/bin/sh -e
 
+
+export AWESOME_IGNORE_LGI=1
+
 mkdir -pv build
 cd build
 cmake ../ \
