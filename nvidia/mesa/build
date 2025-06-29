@@ -1,0 +1,55 @@
+#!/bin/sh -e
+
+# Imprime los comandos a medida que se ejecutan para facilitar la depuración.
+set -x
+
+# Establece el directorio de destino para la instalación del paquete.
+export DESTDIR="$1"
+
+# Solución para evitar una dependencia dura de Rust en el sistema de compilación.
+sed '/rust_std=2021/d' meson.build > _
+mv -f _ meson.build
+
+# Comprueba si libglvnd está disponible. El driver de NVIDIA LO REQUIERE.
+# Si no está, se deshabilitará, pero la compilación probablemente fallará
+# o el driver de NVIDIA no funcionará. Asegúrate de tenerlo instalado.
+pkg-config --exists libglvnd || glvnd_enabled=false
+
+# Configura el proyecto con Meson.
+meson setup \
+    -Dprefix=/usr \
+    -Dsysconfdir=/etc \
+    -Dmandir=/usr/share/man \
+    -Dlocalstatedir=/var \
+    -Dbuildtype=release \
+    -Dglx-read-only-text=true \
+    -Dplatforms=x11 \
+    -Dglx=auto \
+    -Degl=enabled \
+    -Dgbm=enabled \
+    -Dopengl=true \
+    -Dgles2=enabled \
+    # --- CAMBIO PRINCIPAL ---
+    # Elimina el driver 'iris' de Intel. Mantiene 'llvmpipe' como un
+    # renderizador de software de respaldo crucial.
+    -Dgallium-drivers=llvmpipe \
+    # --- CAMBIO PRINCIPAL ---
+    # Elimina el driver 'intel' de Vulkan. El driver de NVIDIA
+    # proporciona su propia implementación.
+    -Dvulkan-drivers=[] \
+    -Dgallium-va=disabled \
+    # llvmpipe requiere LLVM.
+    -Dllvm=enabled \
+    -Dshared-llvm=enabled \
+    -Dlibunwind=enabled \
+    -Db_lto=true \
+    -Dvalgrind=disabled \
+    -Dzstd=enabled \
+    # Habilita glvnd. Es esencial para que el driver de NVIDIA funcione.
+    -Dglvnd="${glvnd_enabled:-true}" \
+    output
+
+# Compila e instala usando Ninja.
+ninja -C output
+ninja -C output install
+
