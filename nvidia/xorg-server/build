@@ -23,7 +23,7 @@ meson setup \
     -Dglamor=true \
     -Dxorg=true \
     -Dxephyr=false \
-    -Dxdmcp=false \
+    -Dxdmcp=true \
     -Ddefault_font_path=/usr/share/fonts \
     output
 
