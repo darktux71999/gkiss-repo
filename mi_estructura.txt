@@ -1,0 +1,6342 @@
+.
+|-- README.md
+|-- community
+|   |-- 2bwm
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- 9base
+|   |   |-- build
+|   |   |-- sources
+|   |   `-- version
+|   |-- 9wm-git
+|   |   |-- build
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- abduco
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- abiword
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- post-install
+|   |   |-- sources
+|   |   `-- version
+|   |-- aerc
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- age
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- alacritty
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- amfora
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- aml
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- android-tools
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- apint-git
+|   |   |-- build
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- appstream
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- patches
+|   |   |   `-- no-i18n.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- appstream-glib
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- patches
+|   |   |   `-- no-uuid.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- apulse
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- patches
+|   |   |   `-- musl.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- aria2
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- asciinema
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- atk
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- post-install
+|   |   |-- sources
+|   |   `-- version
+|   |-- autoconf
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- autoconf-archive
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- automake
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- autorandr
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- axel
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- azpainter
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- babl
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- bandwhich
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- bash
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- bat
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- post-install
+|   |   |-- sources
+|   |   `-- version
+|   |-- bc
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- bdfedit
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- patches
+|   |   |   `-- bdfedit-1.3.diff
+|   |   |-- sources
+|   |   `-- version
+|   |-- bdftopcf
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- bemenu
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- berry-git
+|   |   |-- build
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- birch
+|   |   |-- build
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- bit-bin
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- boost
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- bottom
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- brlaser
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- brotli
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- brownout
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- bspwm
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- btop
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- btrfs-progs
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- bubblewrap
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- cantarell-fonts
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- catgirl
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- patches
+|   |   |   `-- 0001-input.c-add-kiss-macro.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- cava
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- ccrypt
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- cfm
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- cgal
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- chemtool
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- chicken
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- cloc
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- cmark-gfm
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- cmus
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- patches
+|   |   |   `-- ffmpeg6.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- coin
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- compfy-git
+|   |   |-- build
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- containerd
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- etcsums
+|   |   |-- files
+|   |   |   `-- run
+|   |   |-- sources
+|   |   `-- version
+|   |-- coreutils
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- cproc
+|   |   |-- build
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- crosstool-ng
+|   |   |-- build
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- cryptsetup
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- ctags
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- ctwm
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- cups
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- post-install
+|   |   |-- sources
+|   |   `-- version
+|   |-- cups-filters
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- curlpp
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- cwm-git
+|   |   |-- build
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- darkhttpd
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- dash
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- dejavu-ttf
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- post-install
+|   |   |-- sources
+|   |   `-- version
+|   |-- delta
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- dialog
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- dillo
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- discount
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- diskonaut
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- djvulibre
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- dmenu
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- dmidecode
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- docker
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- files
+|   |   |   `-- run
+|   |   |-- patches
+|   |   |   `-- tini-basename.patch
+|   |   |-- post-install
+|   |   |-- pre-remove
+|   |   |-- sources
+|   |   `-- version
+|   |-- docker-buildx
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- docker-compose-bin
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- dogefetch
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- dosbox
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- double-conversion
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- doxygen
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- patches
+|   |   |   `-- remove-usage-of-fstat64.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- dragon-git
+|   |   |-- build
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- dvtm
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- dwm
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- dzen-git
+|   |   |-- build
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- ecl
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- eigen
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- elinks
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- emacs
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- emacs-compat
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- emacs-git
+|   |   |-- build
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- emacs-kiss-git
+|   |   |-- build
+|   |   |-- depends
+|   |   |-- post-install
+|   |   |-- sources
+|   |   `-- version
+|   |-- emacs-tsort
+|   |   |-- build
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- entr
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- erlang
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- evremap
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- evtest
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- exa
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- files
+|   |   |   |-- exa.1
+|   |   |   `-- exa_colors.5
+|   |   |-- sources
+|   |   `-- version
+|   |-- execline
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- exfatprogs
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- exiftool
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- exiv2
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- extra-cmake-modules
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- falkon
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- files
+|   |   |   `-- falkon-privacy
+|   |   |-- patches
+|   |   |   |-- 0001-falkon-no-karchive.patch
+|   |   |   `-- 0002-falkon-open-mpv.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- farbfeld
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- fdk-aac
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- fdm
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- feh
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- fff
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- fftw
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- file
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- flac
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- flatpak
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- post-install
+|   |   |-- sources
+|   |   `-- version
+|   |-- fltk
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- fmt
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- fnf
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- fontforge-git
+|   |   |-- build
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- fortune
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- files
+|   |   |   |-- fortune
+|   |   |   `-- kiss
+|   |   |-- sources
+|   |   `-- version
+|   |-- fossil
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- frankenwm-git
+|   |   |-- build
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- freeglut
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- fribidi
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- fuse
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- fuse2
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- patches
+|   |   |   `-- closefrom-glibc.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- fvwm-git
+|   |   |-- build
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- fzy
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- gawk
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- gc
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- gcompat
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- gd
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- gdb
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- gegl
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- gettext-tiny
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- gexiv2
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- gftp-git
+|   |   |-- build
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- ghostscript
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- gimp-git
+|   |   |-- README.md
+|   |   |-- build
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- post-install
+|   |   |-- sources
+|   |   `-- version
+|   |-- girara
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- github-cli
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- glew
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- glfw
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- glib-networking
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- glm
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- glmark2-git
+|   |   |-- build
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- globe-cli
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- glorytun
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- glow-bin
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- glu
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- gnu-netcat
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- gnumeric
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- files
+|   |   |   `-- intltool
+|   |   |-- patches
+|   |   |   |-- remove-intltool.patch
+|   |   |   |-- remove-po-dir.patch
+|   |   |   `-- remove-xml-parser.patch
+|   |   |-- post-install
+|   |   |-- sources
+|   |   `-- version
+|   |-- gnupg1
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- gnupg2
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- gnuplot
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- gnutls
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- go
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- patches
+|   |   |   `-- posix-build.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- go-bootstrap
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- patches
+|   |   |   `-- posix-build-gcc-15.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- go-ipfs
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- files
+|   |   |   `-- ipfs.run
+|   |   |-- sources
+|   |   `-- version
+|   |-- gobject-introspection
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- godot
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- patches
+|   |   |   |-- gcc13.patch
+|   |   |   `-- no-execinfo.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- goffice
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- files
+|   |   |   `-- intltool
+|   |   |-- sources
+|   |   `-- version
+|   |-- goimports
+|   |   |-- build
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- gopls
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- gperf
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- gpgme
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- patches
+|   |   |   `-- lfs64.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- gphoto2
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- files
+|   |   |   `-- libexif.patch
+|   |   |-- post-install
+|   |   |-- sources
+|   |   `-- version
+|   |-- grabc
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- graphene
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- groff
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- gron-git
+|   |   |-- build
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- gsl
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- gspt
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- patches
+|   |   |   `-- hide-image.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- gst-plugins-base
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- gstreamer
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- gt5
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- gtar
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- gtest
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- gtk+2
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- gtk+4
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- patches
+|   |   |   `-- no-fribidi.patch
+|   |   |-- post-install
+|   |   |-- sources
+|   |   `-- version
+|   |-- gtk-gnutella-git
+|   |   |-- build
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- guile3
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- patches
+|   |   |   `-- guile-3.0.10-c23.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- guile3-fibers-git
+|   |   |-- build
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- gumbo-parser
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- hack
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- post-install
+|   |   |-- sources
+|   |   `-- version
+|   |-- harfbuzz-icu
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- hdf5
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- herbe
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- herbstluftwm
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- hexyl
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- hostapd
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- files
+|   |   |   `-- hostapd.run
+|   |   |-- sources
+|   |   `-- version
+|   |-- hsetroot
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- htop
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- hugo
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- hummingbird-git
+|   |   |-- build
+|   |   |-- sources
+|   |   `-- version
+|   |-- i3
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- patches
+|   |   |   |-- i3-no-libstartup-notification.patch
+|   |   |   `-- no-bash.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- icu
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- idmap
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- imagemagick
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- imath
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- imlib2
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- inih
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- iniparser
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- init-hooks
+|   |   |-- build
+|   |   |-- sources
+|   |   `-- version
+|   |-- iosevka-nerd-fonts
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- iperf
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- iproute2
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- patches
+|   |   |   `-- make-iproute2-fhs-compliant.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- iptables
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- patches
+|   |   |   `-- use-sh-iptables-apply.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- isync
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- iw
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- jansson
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- jbig2dec
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- jo
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- jq
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- json-glib
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- jsoncpp
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- jwm
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- kak-lsp-bin
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- kakoune
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- kexec-tools
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- keyutils
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- kfc
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- kicad
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- kiss-find
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- kmod
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- patches
+|   |   |   `-- fix-ln.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- lcms
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- ldns
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- post-install
+|   |   |-- sources
+|   |   `-- version
+|   |-- lemonbar
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- less
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- libadwaita
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- patches
+|   |   |   `-- no-fribidi.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- libaio
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- libarchive
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- libassuan
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- libatomic_ops
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- libbpf
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- libburn
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- libcap
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- patches
+|   |   |   `-- no-bash.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- libconfig
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- libcupsfilters
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- libdvdcss
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- libdvdread
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- libedit
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- libev
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- libevent
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- libexif
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- libfixposix
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- libgcrypt
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- libgpg-error
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- libgphoto2
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- libgsf
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- libisoburn
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- libisofs
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- libjpeg
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- libksba
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- libmedc
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- patches
+|   |   |   `-- cmake-config-dir.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- libmupdf
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- files
+|   |   |   `-- mupdf.pc.in
+|   |   |-- patches
+|   |   |   |-- no-openjpeg.patch
+|   |   |   `-- objcopy.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- libmypaint
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- libnghttp2
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- libnl
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- libnotify
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- libpcap
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- libportaudio2
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- libppd
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- libpsl
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- libptytty
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- librsvg
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- libsass
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- libseccomp
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- libsecret
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- libsigc++
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- libsixel
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- libslirp
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- libsndfile
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- libsodium
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- libsoup
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- libsoup3
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- libspectre
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- libspnav
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- libssh
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- libtasn1
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- libtermkey
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- patches
+|   |   |   `-- static-no-libtool.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- libtool
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- libtorrent
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- libtorrent-rasterbar
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- libunistring
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- liburing
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- libusb
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- libutemper
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- libuv
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- libvncserver
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- libwebsockets
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- libxaw3d
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- libxdp
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- libxml2
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- libxmlb
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- libxslt
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- libyaml
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- limine
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- links
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- lm-sensors
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- lpeg
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- patches
+|   |   |   `-- build-static-lib.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- lsof
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- lua
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- files
+|   |   |   `-- lua.pc
+|   |   |-- sources
+|   |   `-- version
+|   |-- lua-filesystem
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- luajit
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- luakit
+|   |   |-- build
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- lux
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- patches
+|   |   |   `-- portability.patch
+|   |   |-- post-install
+|   |   |-- sources
+|   |   `-- version
+|   |-- lvm2
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- patches
+|   |   |   |-- 0001-lvresize-use-POSIX-shell.patch
+|   |   |   |-- fix-stdio-usage.patch
+|   |   |   |-- library_dir-default-config.patch
+|   |   |   `-- mlockall-default-config.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- lxappearance
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- lxrandr
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- lz4
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- lzo
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- maim
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- mblaze
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- mdev-usb
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- files
+|   |   |   `-- dev-bus-usb
+|   |   |-- post-install
+|   |   |-- pre-remove
+|   |   |-- sources
+|   |   `-- version
+|   |-- mediainfo
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- patches
+|   |   |   `-- fix_configure.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- meh-git
+|   |   |-- build
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- mg
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- minikube
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- mkfontdir
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- mksh
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- mosh
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- patches
+|   |   |   `-- use_cxx17.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- motif
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- mplayer
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- msgpack-c
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- msmtp
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- mtools
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- mtpaint
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- mtr
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- mypaint-brushes
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- nano
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- nawk-git
+|   |   |-- build
+|   |   |-- sources
+|   |   `-- version
+|   |-- ncdu1
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- neatvnc
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- neofetch
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- neomutt
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- neon
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- neovim
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- netsurf-gtk3
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- nettle
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- ngspice
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- files
+|   |   |   `-- ngspice.pc
+|   |   |-- sources
+|   |   `-- version
+|   |-- nmap
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- npth
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- nq
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- nsd
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- files
+|   |   |   `-- nsd.run
+|   |   |-- sources
+|   |   `-- version
+|   |-- nsxiv
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- ntfs-3g
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- numactl
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- nyxt
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- oksh
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- openal-soft
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- openbox
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- patches
+|   |   |   |-- openbox-3.6.2-fix-out-of-bounds.patch
+|   |   |   `-- openbox-3.6.2-rounded-corners.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- opencascade
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- patches
+|   |   |   |-- cmake-fix-variable.patch
+|   |   |   |-- cmake_fix_install_dir.patch
+|   |   |   |-- no_backtrace.patch
+|   |   |   |-- no_feenableexcept.patch
+|   |   |   `-- no_mallinfo.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- opencsg
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- openjpeg2
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- openntpd
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- files
+|   |   |   `-- ntpd.run
+|   |   |-- post-install
+|   |   |-- sources
+|   |   `-- version
+|   |-- optipng
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- ostree
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- otf2bdf-git
+|   |   |-- build
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- ox
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- palemoon
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- files
+|   |   |   `-- mozconfig.in
+|   |   |-- patches
+|   |   |   |-- gcc11-fix.patch
+|   |   |   |-- no-gtk2.patch
+|   |   |   `-- null-fix.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- pandoc-bin
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- pash
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- patch
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- patchelf
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- pciutils
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- perl
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- perl-netsurf
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- pfetch
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- pick
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- patches
+|   |   |   `-- fix-build.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- picom
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- picom-git
+|   |   |-- build -> ../picom/build
+|   |   |-- depends -> ../picom/depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- pinentry
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- pipewire
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- patches
+|   |   |   |-- autostart-session-manager.patch
+|   |   |   `-- libudev-zero.patch
+|   |   |-- post-install
+|   |   |-- sources
+|   |   `-- version
+|   |-- pkcs11-helper
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- pmount
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- polybar-git
+|   |   |-- build
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- poppler
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- poppler-data
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- popt
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- potrace
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- pounce
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- powertop
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- pqiv
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- post-install
+|   |   |-- sources
+|   |   `-- version
+|   |-- procps-ng
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- protobuf
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- protobuf-c
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- pv
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- pybind11
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- pystring
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- patches
+|   |   |   `-- cmake.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- python-pivy
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- qbe
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- qbittorrent
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- qemu
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- patches
+|   |   |   |-- CVE-2021-20255.patch
+|   |   |   `-- musl-initialise-msghdr.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- qpdf
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- qpwgraph
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- qrencode
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- qscintilla-qt5
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- patches
+|   |   |   `-- configure.py-objdir-support.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- qt5
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- files
+|   |   |   `-- qt.conf
+|   |   |-- patches
+|   |   |   |-- egl-x11.patch
+|   |   |   |-- fix-build-with-xkbcommon-160.patch
+|   |   |   |-- lfs64.patch
+|   |   |   `-- qt5-base-nostrip.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- qt5-declarative
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- qt5-multimedia
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- qt5-svg
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- qt5-wayland
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- qt5-webchannel
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- qt5-webengine
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- patches
+|   |   |   |-- 01-chromium-musl-syscalls.patch
+|   |   |   |-- 02-fix-chromium-build.patch
+|   |   |   |-- 03-musl-hacks.patch
+|   |   |   |-- 04-musl-sandbox.patch
+|   |   |   |-- 05-nasm.patch
+|   |   |   |-- 06-musl-crashpad.patch
+|   |   |   |-- 07-musl-dispatch-to-musl.patch
+|   |   |   |-- 08-musl-elf-arm.patch
+|   |   |   |-- 09-musl-execinfo.patch
+|   |   |   |-- 10-musl-mallinfo.patch
+|   |   |   |-- 11-musl-pread-pwrite.patch
+|   |   |   |-- 12-musl-pvalloc.patch
+|   |   |   |-- 13-musl-resolve.patch
+|   |   |   |-- 14-musl-siginfo-t.patch
+|   |   |   |-- 15-musl-stackstart.patch
+|   |   |   |-- 16-musl-sysreg-for__WORDSIZE.patch
+|   |   |   |-- 17-musl-thread-stacksize.patch
+|   |   |   |-- 18-remove-glibc-and-dbus.patch
+|   |   |   `-- 19-python3.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- qt5-x11extras
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- qt5-xmlpatterns
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- qt6
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- patches
+|   |   |   |-- 0001-lfs64.patch
+|   |   |   `-- 0002-fix-build-with-xkbcommon-160.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- ranger
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- patches
+|   |   |   `-- 081e73152a9391211770fab56676d7d974413ae6.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- raylib
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- readline
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- reptyr
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- retrogram-rtlsdr
+|   |   |-- build
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- ripgrep
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- rsync
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- rtorrent
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- ruby
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- runc
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- runit
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- files
+|   |   |   |-- 2
+|   |   |   |-- poweroff
+|   |   |   `-- reboot
+|   |   |-- patches
+|   |   |   |-- clearmem.patch
+|   |   |   |-- svlogd.patch
+|   |   |   `-- utmpset-time_t.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- rustup-bin
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- rxvt-unicode
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- patches
+|   |   |   |-- gentables.patch
+|   |   |   `-- rxvt-unicode-kerning.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- s6
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- s6-linux-init
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- patches
+|   |   |   `-- kiss.patch
+|   |   |-- post-install
+|   |   |-- sources
+|   |   `-- version
+|   |-- s6-rc
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- sane
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- sasm
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- sassc
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- sbase
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- patches
+|   |   |   `-- tar-dash-remove.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- sbcl
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- sc
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- sc-im
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- sccache
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- post-install
+|   |   |-- sources
+|   |   `-- version
+|   |-- scenefx
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- schismtracker-git
+|   |   |-- build
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- scons
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- scrcpy
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- scroll
+|   |   |-- build
+|   |   |-- sources
+|   |   `-- version
+|   |-- scryer-prolog
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- sct
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- sdl
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- sdl2
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- sdl2_ttf
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- secret
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- sed
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- sed-i
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- post-install
+|   |   |-- sources
+|   |   `-- version
+|   |-- senpai
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- sent-git
+|   |   |-- build
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- sfeed
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- sgt-puzzles
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- shellcheck-bin
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- shepherd
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- shfm
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- shfmt-bin
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- shinit
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- sinit
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- files
+|   |   |   |-- config.h
+|   |   |   |-- poweroff
+|   |   |   |-- reboot
+|   |   |   `-- sinit-launch-services.boot
+|   |   |-- post-install
+|   |   |-- sources
+|   |   `-- version
+|   |-- skippy-xd-git
+|   |   |-- build
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- slang
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- slides
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- slirp4netns
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- slock
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- slock-paranoid-git
+|   |   |-- build
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- slop
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- smu-karlb
+|   |   |-- build
+|   |   |-- sources
+|   |   `-- version
+|   |-- snd
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- spectrwm
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- spice-protocol
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- spotify-player
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- spotifyd
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- patches
+|   |   |   `-- bump-libc.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- squashfs-tools
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- srain
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- st-luke-git
+|   |   |-- build
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- stalonetray-git
+|   |   |-- build
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- stumpwm-contrib-git
+|   |   |-- build
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- stumpwm-git
+|   |   |-- build
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- stw-git
+|   |   |-- build
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- sudo
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- surf
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- patches
+|   |   |   `-- no-gcr.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- svkbd
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- swappy
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- patches
+|   |   |   `-- no-po.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- swaybg
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- swayfx
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- swayidle
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- swaylock
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- swig
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- swww
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- sx-git
+|   |   |-- build
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- sxcs
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- files
+|   |   |   `-- config.h
+|   |   |-- sources
+|   |   `-- version
+|   |-- sxhkd
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- sylpheed
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- syncthing
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- sysmgr
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- files
+|   |   |   |-- respawn
+|   |   |   |-- sysmgr.boot
+|   |   |   `-- sysmgr.pre.shutdown
+|   |   |-- post-install
+|   |   |-- sources
+|   |   `-- version
+|   |-- tabbed
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- tcc
+|   |   |-- build
+|   |   |-- sources
+|   |   `-- version
+|   |-- tcl
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- tdb
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- tea
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- terminus-font
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- post-install
+|   |   |-- sources
+|   |   `-- version
+|   |-- tiff
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- tig
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- tinygo-bin
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- tinyramfs-git
+|   |   |-- build
+|   |   |-- sources
+|   |   `-- version
+|   |-- tinywm-git
+|   |   |-- build
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- tiv
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- tk
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- tkdiff
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- tmate
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- tmux
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- tokei
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- totp
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- transmission
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- tre
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- tree
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- ttf-font-awesome
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- ttf-jetbrains-mono
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- ttyd
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- tuitube
+|   |   |-- build
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- twemoji-color-font
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- typescript-language-server
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- uacme
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- ubase
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- patches
+|   |   |   `-- mount-fix-mount-o-move.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- ugrep
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- umurmur
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- unbound
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- files
+|   |   |   `-- unbound.run
+|   |   |-- sources
+|   |   `-- version
+|   |-- unifdef-git
+|   |   |-- build
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- unixodbc
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- unzip
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- patches
+|   |   |   |-- 0001-Fix-CVE-2016-9844-rhbz-1404283.patch
+|   |   |   |-- series
+|   |   |   |-- unzip-6.0-COVSCAN-fix-unterminated-string.patch
+|   |   |   |-- unzip-6.0-alt-iconv-utf8-print.patch
+|   |   |   |-- unzip-6.0-alt-iconv-utf8.patch
+|   |   |   |-- unzip-6.0-attribs-overflow.patch
+|   |   |   |-- unzip-6.0-bzip2-configure.patch
+|   |   |   |-- unzip-6.0-caseinsensitive.patch
+|   |   |   |-- unzip-6.0-close.patch
+|   |   |   |-- unzip-6.0-configure.patch
+|   |   |   |-- unzip-6.0-cve-2014-8139.patch
+|   |   |   |-- unzip-6.0-cve-2014-8140.patch
+|   |   |   |-- unzip-6.0-cve-2014-8141.patch
+|   |   |   |-- unzip-6.0-cve-2018-1000035-heap-based-overflow.patch
+|   |   |   |-- unzip-6.0-cve-2018-18384.patch
+|   |   |   |-- unzip-6.0-exec-shield.patch
+|   |   |   |-- unzip-6.0-fix-recmatch.patch
+|   |   |   |-- unzip-6.0-format-secure.patch
+|   |   |   |-- unzip-6.0-heap-overflow-infloop.patch
+|   |   |   |-- unzip-6.0-manpage-fix.patch
+|   |   |   |-- unzip-6.0-overflow-long-fsize.patch
+|   |   |   |-- unzip-6.0-overflow.patch
+|   |   |   |-- unzip-6.0-symlink.patch
+|   |   |   |-- unzip-6.0-timestamp.patch
+|   |   |   |-- unzip-6.0-valgrind.patch
+|   |   |   |-- unzip-6.0-x-option.patch
+|   |   |   |-- unzip-6.0_CVE-2021-4217.patch
+|   |   |   |-- unzip-zipbomb-manpage.patch
+|   |   |   |-- unzip-zipbomb-part1.patch
+|   |   |   |-- unzip-zipbomb-part2.patch
+|   |   |   `-- unzip-zipbomb-part3.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- uthash
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- vimb
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- patches
+|   |   |   `-- 727.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- vimb-git
+|   |   |-- build
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- virglrenderer
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- vis
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- patches
+|   |   |   `-- wl-clipboard.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- viu
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- vmwh
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- patches
+|   |   |   `-- no-strnvis.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- volumeicon
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- vte3-git
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- patches
+|   |   |   `-- fix-W_EXITCODE.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- vundle
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- wayvnc
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- webkit2gtk
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- patches
+|   |   |   `-- crypto-fix.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- windowmaker
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- wireguard-tools
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- post-install
+|   |   |-- sources
+|   |   `-- version
+|   |-- wireless_tools
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- wl-clipboard
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- wl-screenrec
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- wlr-randr
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- wmenu
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- wv
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- wxWidgets
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- patches
+|   |   |   |-- invalid-header-syntax.patch
+|   |   |   |-- largefile.patch
+|   |   |   |-- musl-locale-l.patch
+|   |   |   |-- musl-no-langinfo-h.patch
+|   |   |   `-- no-glvnd.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- wyeb-git
+|   |   |-- build
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- post-install
+|   |   |-- sources
+|   |   `-- version
+|   |-- x11fs-git
+|   |   |-- build
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- x11up
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- files
+|   |   |   `-- x11up.c
+|   |   |-- sources
+|   |   `-- version
+|   |-- x11vnc-git
+|   |   |-- build
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- xbanish
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- xcalc
+|   |   |-- build -> ../../xorg/libXmeta/build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources -> ../../xorg/libXmeta/sources-app
+|   |   |-- sources
+|   |   `-- version
+|   |-- xcb-util-xrm
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- xcircuit
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- xclip
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- xcompmgr
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- xdo
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- xdotool
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- xerces-c
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- xf86-video-fbdev
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- xf86-video-qxl
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- xf86-video-vmware
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- xfiles-git
+|   |   |-- build
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- xhidecursor-git
+|   |   |-- build
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- xhost
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- xkill
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- xmenu-git
+|   |   |-- build
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- xmodmap
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- xnotify
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- xob
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- xrandr-invert-colors-git
+|   |   |-- build
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- xsel
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- xssstate
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- xwallpaper
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- xwm
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- xxd
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- yajl
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- yaml-cpp
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- yarn
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- yash
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- yasm
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- yt-dlp
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- files
+|   |   |   `-- youtube-dl
+|   |   |-- sources
+|   |   `-- version
+|   |-- ytfzf
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- post-install
+|   |   |-- sources
+|   |   `-- version
+|   |-- zathura
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- files
+|   |   |   |-- zathura-sandbox.1 -> zathura.1
+|   |   |   |-- zathura.1
+|   |   |   `-- zathurarc.5
+|   |   |-- patches
+|   |   |   `-- remove_gettext.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- zathura-cb
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- zathura-djvu
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- zathura-pdf-mupdf
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- patches
+|   |   |   `-- fix-meson.build.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- zathura-pdf-poppler
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- zig-bin
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- zip
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- patches
+|   |   |   |-- zip-3.0-currdir.patch
+|   |   |   |-- zip-3.0-exec-shield.patch
+|   |   |   |-- zip-3.0-format-security.patch
+|   |   |   |-- zip-3.0-gcc-14.patch
+|   |   |   `-- zipnote.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- zls-bin
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- zsh
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- files
+|   |   |   `-- zprofile
+|   |   |-- patches
+|   |   |   `-- zsh-Avoid-incompatible-pointer-types-in-terminfo-g.patch
+|   |   |-- sources
+|   |   `-- version
+|   `-- zzz
+|       |-- build
+|       |-- checksums
+|       |-- files
+|       |   |-- zzz
+|       |   `-- zzz.8
+|       |-- sources
+|       `-- version
+|-- core
+|   |-- b3sum
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- baseinit
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- baselayout
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- files
+|   |   |   |-- crypttab
+|   |   |   |-- fstab
+|   |   |   |-- group
+|   |   |   |-- host.conf
+|   |   |   |-- hosts
+|   |   |   |-- issue
+|   |   |   |-- mime.types
+|   |   |   |-- os-release
+|   |   |   |-- passwd
+|   |   |   |-- profile
+|   |   |   |-- securetty
+|   |   |   |-- shadow
+|   |   |   `-- shells
+|   |   |-- sources
+|   |   `-- version
+|   |-- binutils
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- bison
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- busybox
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- files
+|   |   |   |-- acpid.run
+|   |   |   |-- crond.run
+|   |   |   |-- mdev.conf
+|   |   |   |-- mdev.run
+|   |   |   |-- ntpd.run
+|   |   |   `-- syslogd.run
+|   |   |-- patches
+|   |   |   |-- CVE-2022-28391.patch
+|   |   |   |-- CVE-2023-42366.patch
+|   |   |   |-- adduser-no-setgid.patch
+|   |   |   |-- awk-fix-literal-backslash.patch
+|   |   |   |-- fsck-resolve-uuid.patch
+|   |   |   |-- init-use-baseinit.patch
+|   |   |   |-- kernel-6.8-tca.patch
+|   |   |   |-- lineedit-Handle-SIGWINCH-gracefully.patch
+|   |   |   |-- lsusb-vendor-product.patch
+|   |   |   |-- modprobe-kernel-version.patch
+|   |   |   |-- print-unicode.patch
+|   |   |   `-- unzip-usage-no-error.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- bzip2
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- certs
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- curl
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- files
+|   |   |   |-- CURLINFO_ACTIVESOCKET.3
+|   |   |   |-- CURLINFO_APPCONNECT_TIME.3
+|   |   |   |-- CURLINFO_APPCONNECT_TIME_T.3
+|   |   |   |-- CURLINFO_CAINFO.3
+|   |   |   |-- CURLINFO_CAPATH.3
+|   |   |   |-- CURLINFO_CERTINFO.3
+|   |   |   |-- CURLINFO_CONDITION_UNMET.3
+|   |   |   |-- CURLINFO_CONNECT_TIME.3
+|   |   |   |-- CURLINFO_CONNECT_TIME_T.3
+|   |   |   |-- CURLINFO_CONN_ID.3
+|   |   |   |-- CURLINFO_CONTENT_LENGTH_DOWNLOAD.3
+|   |   |   |-- CURLINFO_CONTENT_LENGTH_DOWNLOAD_T.3
+|   |   |   |-- CURLINFO_CONTENT_LENGTH_UPLOAD.3
+|   |   |   |-- CURLINFO_CONTENT_LENGTH_UPLOAD_T.3
+|   |   |   |-- CURLINFO_CONTENT_TYPE.3
+|   |   |   |-- CURLINFO_COOKIELIST.3
+|   |   |   |-- CURLINFO_EARLYDATA_SENT_T.3
+|   |   |   |-- CURLINFO_EFFECTIVE_METHOD.3
+|   |   |   |-- CURLINFO_EFFECTIVE_URL.3
+|   |   |   |-- CURLINFO_FILETIME.3
+|   |   |   |-- CURLINFO_FILETIME_T.3
+|   |   |   |-- CURLINFO_FTP_ENTRY_PATH.3
+|   |   |   |-- CURLINFO_HEADER_SIZE.3
+|   |   |   |-- CURLINFO_HTTPAUTH_AVAIL.3
+|   |   |   |-- CURLINFO_HTTPAUTH_USED.3
+|   |   |   |-- CURLINFO_HTTP_CONNECTCODE.3
+|   |   |   |-- CURLINFO_HTTP_VERSION.3
+|   |   |   |-- CURLINFO_LASTSOCKET.3
+|   |   |   |-- CURLINFO_LOCAL_IP.3
+|   |   |   |-- CURLINFO_LOCAL_PORT.3
+|   |   |   |-- CURLINFO_NAMELOOKUP_TIME.3
+|   |   |   |-- CURLINFO_NAMELOOKUP_TIME_T.3
+|   |   |   |-- CURLINFO_NUM_CONNECTS.3
+|   |   |   |-- CURLINFO_OS_ERRNO.3
+|   |   |   |-- CURLINFO_POSTTRANSFER_TIME_T.3
+|   |   |   |-- CURLINFO_PRETRANSFER_TIME.3
+|   |   |   |-- CURLINFO_PRETRANSFER_TIME_T.3
+|   |   |   |-- CURLINFO_PRIMARY_IP.3
+|   |   |   |-- CURLINFO_PRIMARY_PORT.3
+|   |   |   |-- CURLINFO_PRIVATE.3
+|   |   |   |-- CURLINFO_PROTOCOL.3
+|   |   |   |-- CURLINFO_PROXYAUTH_AVAIL.3
+|   |   |   |-- CURLINFO_PROXYAUTH_USED.3
+|   |   |   |-- CURLINFO_PROXY_ERROR.3
+|   |   |   |-- CURLINFO_PROXY_SSL_VERIFYRESULT.3
+|   |   |   |-- CURLINFO_QUEUE_TIME_T.3
+|   |   |   |-- CURLINFO_REDIRECT_COUNT.3
+|   |   |   |-- CURLINFO_REDIRECT_TIME.3
+|   |   |   |-- CURLINFO_REDIRECT_TIME_T.3
+|   |   |   |-- CURLINFO_REDIRECT_URL.3
+|   |   |   |-- CURLINFO_REFERER.3
+|   |   |   |-- CURLINFO_REQUEST_SIZE.3
+|   |   |   |-- CURLINFO_RESPONSE_CODE.3
+|   |   |   |-- CURLINFO_RETRY_AFTER.3
+|   |   |   |-- CURLINFO_RTSP_CLIENT_CSEQ.3
+|   |   |   |-- CURLINFO_RTSP_CSEQ_RECV.3
+|   |   |   |-- CURLINFO_RTSP_SERVER_CSEQ.3
+|   |   |   |-- CURLINFO_RTSP_SESSION_ID.3
+|   |   |   |-- CURLINFO_SCHEME.3
+|   |   |   |-- CURLINFO_SIZE_DOWNLOAD.3
+|   |   |   |-- CURLINFO_SIZE_DOWNLOAD_T.3
+|   |   |   |-- CURLINFO_SIZE_UPLOAD.3
+|   |   |   |-- CURLINFO_SIZE_UPLOAD_T.3
+|   |   |   |-- CURLINFO_SPEED_DOWNLOAD.3
+|   |   |   |-- CURLINFO_SPEED_DOWNLOAD_T.3
+|   |   |   |-- CURLINFO_SPEED_UPLOAD.3
+|   |   |   |-- CURLINFO_SPEED_UPLOAD_T.3
+|   |   |   |-- CURLINFO_SSL_ENGINES.3
+|   |   |   |-- CURLINFO_SSL_VERIFYRESULT.3
+|   |   |   |-- CURLINFO_STARTTRANSFER_TIME.3
+|   |   |   |-- CURLINFO_STARTTRANSFER_TIME_T.3
+|   |   |   |-- CURLINFO_TLS_SESSION.3
+|   |   |   |-- CURLINFO_TLS_SSL_PTR.3
+|   |   |   |-- CURLINFO_TOTAL_TIME.3
+|   |   |   |-- CURLINFO_TOTAL_TIME_T.3
+|   |   |   |-- CURLINFO_USED_PROXY.3
+|   |   |   |-- CURLINFO_XFER_ID.3
+|   |   |   |-- CURLMOPT_CHUNK_LENGTH_PENALTY_SIZE.3
+|   |   |   |-- CURLMOPT_CONTENT_LENGTH_PENALTY_SIZE.3
+|   |   |   |-- CURLMOPT_MAXCONNECTS.3
+|   |   |   |-- CURLMOPT_MAX_CONCURRENT_STREAMS.3
+|   |   |   |-- CURLMOPT_MAX_HOST_CONNECTIONS.3
+|   |   |   |-- CURLMOPT_MAX_PIPELINE_LENGTH.3
+|   |   |   |-- CURLMOPT_MAX_TOTAL_CONNECTIONS.3
+|   |   |   |-- CURLMOPT_PIPELINING.3
+|   |   |   |-- CURLMOPT_PIPELINING_SERVER_BL.3
+|   |   |   |-- CURLMOPT_PIPELINING_SITE_BL.3
+|   |   |   |-- CURLMOPT_PUSHDATA.3
+|   |   |   |-- CURLMOPT_PUSHFUNCTION.3
+|   |   |   |-- CURLMOPT_SOCKETDATA.3
+|   |   |   |-- CURLMOPT_SOCKETFUNCTION.3
+|   |   |   |-- CURLMOPT_TIMERDATA.3
+|   |   |   |-- CURLMOPT_TIMERFUNCTION.3
+|   |   |   |-- CURLOPT_ABSTRACT_UNIX_SOCKET.3
+|   |   |   |-- CURLOPT_ACCEPTTIMEOUT_MS.3
+|   |   |   |-- CURLOPT_ACCEPT_ENCODING.3
+|   |   |   |-- CURLOPT_ADDRESS_SCOPE.3
+|   |   |   |-- CURLOPT_ALTSVC.3
+|   |   |   |-- CURLOPT_ALTSVC_CTRL.3
+|   |   |   |-- CURLOPT_APPEND.3
+|   |   |   |-- CURLOPT_AUTOREFERER.3
+|   |   |   |-- CURLOPT_AWS_SIGV4.3
+|   |   |   |-- CURLOPT_BUFFERSIZE.3
+|   |   |   |-- CURLOPT_CAINFO.3
+|   |   |   |-- CURLOPT_CAINFO_BLOB.3
+|   |   |   |-- CURLOPT_CAPATH.3
+|   |   |   |-- CURLOPT_CA_CACHE_TIMEOUT.3
+|   |   |   |-- CURLOPT_CERTINFO.3
+|   |   |   |-- CURLOPT_CHUNK_BGN_FUNCTION.3
+|   |   |   |-- CURLOPT_CHUNK_DATA.3
+|   |   |   |-- CURLOPT_CHUNK_END_FUNCTION.3
+|   |   |   |-- CURLOPT_CLOSESOCKETDATA.3
+|   |   |   |-- CURLOPT_CLOSESOCKETFUNCTION.3
+|   |   |   |-- CURLOPT_CONNECTTIMEOUT.3
+|   |   |   |-- CURLOPT_CONNECTTIMEOUT_MS.3
+|   |   |   |-- CURLOPT_CONNECT_ONLY.3
+|   |   |   |-- CURLOPT_CONNECT_TO.3
+|   |   |   |-- CURLOPT_CONV_FROM_NETWORK_FUNCTION.3
+|   |   |   |-- CURLOPT_CONV_FROM_UTF8_FUNCTION.3
+|   |   |   |-- CURLOPT_CONV_TO_NETWORK_FUNCTION.3
+|   |   |   |-- CURLOPT_COOKIE.3
+|   |   |   |-- CURLOPT_COOKIEFILE.3
+|   |   |   |-- CURLOPT_COOKIEJAR.3
+|   |   |   |-- CURLOPT_COOKIELIST.3
+|   |   |   |-- CURLOPT_COOKIESESSION.3
+|   |   |   |-- CURLOPT_COPYPOSTFIELDS.3
+|   |   |   |-- CURLOPT_CRLF.3
+|   |   |   |-- CURLOPT_CRLFILE.3
+|   |   |   |-- CURLOPT_CURLU.3
+|   |   |   |-- CURLOPT_CUSTOMREQUEST.3
+|   |   |   |-- CURLOPT_DEBUGDATA.3
+|   |   |   |-- CURLOPT_DEBUGFUNCTION.3
+|   |   |   |-- CURLOPT_DEFAULT_PROTOCOL.3
+|   |   |   |-- CURLOPT_DIRLISTONLY.3
+|   |   |   |-- CURLOPT_DISALLOW_USERNAME_IN_URL.3
+|   |   |   |-- CURLOPT_DNS_CACHE_TIMEOUT.3
+|   |   |   |-- CURLOPT_DNS_INTERFACE.3
+|   |   |   |-- CURLOPT_DNS_LOCAL_IP4.3
+|   |   |   |-- CURLOPT_DNS_LOCAL_IP6.3
+|   |   |   |-- CURLOPT_DNS_SERVERS.3
+|   |   |   |-- CURLOPT_DNS_SHUFFLE_ADDRESSES.3
+|   |   |   |-- CURLOPT_DNS_USE_GLOBAL_CACHE.3
+|   |   |   |-- CURLOPT_DOH_SSL_VERIFYHOST.3
+|   |   |   |-- CURLOPT_DOH_SSL_VERIFYPEER.3
+|   |   |   |-- CURLOPT_DOH_SSL_VERIFYSTATUS.3
+|   |   |   |-- CURLOPT_DOH_URL.3
+|   |   |   |-- CURLOPT_ECH.3
+|   |   |   |-- CURLOPT_EGDSOCKET.3
+|   |   |   |-- CURLOPT_ERRORBUFFER.3
+|   |   |   |-- CURLOPT_EXPECT_100_TIMEOUT_MS.3
+|   |   |   |-- CURLOPT_FAILONERROR.3
+|   |   |   |-- CURLOPT_FILETIME.3
+|   |   |   |-- CURLOPT_FNMATCH_DATA.3
+|   |   |   |-- CURLOPT_FNMATCH_FUNCTION.3
+|   |   |   |-- CURLOPT_FOLLOWLOCATION.3
+|   |   |   |-- CURLOPT_FORBID_REUSE.3
+|   |   |   |-- CURLOPT_FRESH_CONNECT.3
+|   |   |   |-- CURLOPT_FTPPORT.3
+|   |   |   |-- CURLOPT_FTPSSLAUTH.3
+|   |   |   |-- CURLOPT_FTP_ACCOUNT.3
+|   |   |   |-- CURLOPT_FTP_ALTERNATIVE_TO_USER.3
+|   |   |   |-- CURLOPT_FTP_CREATE_MISSING_DIRS.3
+|   |   |   |-- CURLOPT_FTP_FILEMETHOD.3
+|   |   |   |-- CURLOPT_FTP_SKIP_PASV_IP.3
+|   |   |   |-- CURLOPT_FTP_SSL_CCC.3
+|   |   |   |-- CURLOPT_FTP_USE_EPRT.3
+|   |   |   |-- CURLOPT_FTP_USE_EPSV.3
+|   |   |   |-- CURLOPT_FTP_USE_PRET.3
+|   |   |   |-- CURLOPT_GSSAPI_DELEGATION.3
+|   |   |   |-- CURLOPT_HAPPY_EYEBALLS_TIMEOUT_MS.3
+|   |   |   |-- CURLOPT_HAPROXYPROTOCOL.3
+|   |   |   |-- CURLOPT_HAPROXY_CLIENT_IP.3
+|   |   |   |-- CURLOPT_HEADER.3
+|   |   |   |-- CURLOPT_HEADERDATA.3
+|   |   |   |-- CURLOPT_HEADERFUNCTION.3
+|   |   |   |-- CURLOPT_HEADEROPT.3
+|   |   |   |-- CURLOPT_HSTS.3
+|   |   |   |-- CURLOPT_HSTSREADDATA.3
+|   |   |   |-- CURLOPT_HSTSREADFUNCTION.3
+|   |   |   |-- CURLOPT_HSTSWRITEDATA.3
+|   |   |   |-- CURLOPT_HSTSWRITEFUNCTION.3
+|   |   |   |-- CURLOPT_HSTS_CTRL.3
+|   |   |   |-- CURLOPT_HTTP09_ALLOWED.3
+|   |   |   |-- CURLOPT_HTTP200ALIASES.3
+|   |   |   |-- CURLOPT_HTTPAUTH.3
+|   |   |   |-- CURLOPT_HTTPGET.3
+|   |   |   |-- CURLOPT_HTTPHEADER.3
+|   |   |   |-- CURLOPT_HTTPPOST.3
+|   |   |   |-- CURLOPT_HTTPPROXYTUNNEL.3
+|   |   |   |-- CURLOPT_HTTP_CONTENT_DECODING.3
+|   |   |   |-- CURLOPT_HTTP_TRANSFER_DECODING.3
+|   |   |   |-- CURLOPT_HTTP_VERSION.3
+|   |   |   |-- CURLOPT_IGNORE_CONTENT_LENGTH.3
+|   |   |   |-- CURLOPT_INFILESIZE.3
+|   |   |   |-- CURLOPT_INFILESIZE_LARGE.3
+|   |   |   |-- CURLOPT_INTERFACE.3
+|   |   |   |-- CURLOPT_INTERLEAVEDATA.3
+|   |   |   |-- CURLOPT_INTERLEAVEFUNCTION.3
+|   |   |   |-- CURLOPT_IOCTLDATA.3
+|   |   |   |-- CURLOPT_IOCTLFUNCTION.3
+|   |   |   |-- CURLOPT_IPRESOLVE.3
+|   |   |   |-- CURLOPT_ISSUERCERT.3
+|   |   |   |-- CURLOPT_ISSUERCERT_BLOB.3
+|   |   |   |-- CURLOPT_KEEP_SENDING_ON_ERROR.3
+|   |   |   |-- CURLOPT_KEYPASSWD.3
+|   |   |   |-- CURLOPT_KRBLEVEL.3
+|   |   |   |-- CURLOPT_LOCALPORT.3
+|   |   |   |-- CURLOPT_LOCALPORTRANGE.3
+|   |   |   |-- CURLOPT_LOGIN_OPTIONS.3
+|   |   |   |-- CURLOPT_LOW_SPEED_LIMIT.3
+|   |   |   |-- CURLOPT_LOW_SPEED_TIME.3
+|   |   |   |-- CURLOPT_MAIL_AUTH.3
+|   |   |   |-- CURLOPT_MAIL_FROM.3
+|   |   |   |-- CURLOPT_MAIL_RCPT.3
+|   |   |   |-- CURLOPT_MAIL_RCPT_ALLOWFAILS.3
+|   |   |   |-- CURLOPT_MAXAGE_CONN.3
+|   |   |   |-- CURLOPT_MAXCONNECTS.3
+|   |   |   |-- CURLOPT_MAXFILESIZE.3
+|   |   |   |-- CURLOPT_MAXFILESIZE_LARGE.3
+|   |   |   |-- CURLOPT_MAXLIFETIME_CONN.3
+|   |   |   |-- CURLOPT_MAXREDIRS.3
+|   |   |   |-- CURLOPT_MAX_RECV_SPEED_LARGE.3
+|   |   |   |-- CURLOPT_MAX_SEND_SPEED_LARGE.3
+|   |   |   |-- CURLOPT_MIMEPOST.3
+|   |   |   |-- CURLOPT_MIME_OPTIONS.3
+|   |   |   |-- CURLOPT_NETRC.3
+|   |   |   |-- CURLOPT_NETRC_FILE.3
+|   |   |   |-- CURLOPT_NEW_DIRECTORY_PERMS.3
+|   |   |   |-- CURLOPT_NEW_FILE_PERMS.3
+|   |   |   |-- CURLOPT_NOBODY.3
+|   |   |   |-- CURLOPT_NOPROGRESS.3
+|   |   |   |-- CURLOPT_NOPROXY.3
+|   |   |   |-- CURLOPT_NOSIGNAL.3
+|   |   |   |-- CURLOPT_OPENSOCKETDATA.3
+|   |   |   |-- CURLOPT_OPENSOCKETFUNCTION.3
+|   |   |   |-- CURLOPT_PASSWORD.3
+|   |   |   |-- CURLOPT_PATH_AS_IS.3
+|   |   |   |-- CURLOPT_PINNEDPUBLICKEY.3
+|   |   |   |-- CURLOPT_PIPEWAIT.3
+|   |   |   |-- CURLOPT_PORT.3
+|   |   |   |-- CURLOPT_POST.3
+|   |   |   |-- CURLOPT_POSTFIELDS.3
+|   |   |   |-- CURLOPT_POSTFIELDSIZE.3
+|   |   |   |-- CURLOPT_POSTFIELDSIZE_LARGE.3
+|   |   |   |-- CURLOPT_POSTQUOTE.3
+|   |   |   |-- CURLOPT_POSTREDIR.3
+|   |   |   |-- CURLOPT_PREQUOTE.3
+|   |   |   |-- CURLOPT_PREREQDATA.3
+|   |   |   |-- CURLOPT_PREREQFUNCTION.3
+|   |   |   |-- CURLOPT_PRE_PROXY.3
+|   |   |   |-- CURLOPT_PRIVATE.3
+|   |   |   |-- CURLOPT_PROGRESSDATA.3
+|   |   |   |-- CURLOPT_PROGRESSFUNCTION.3
+|   |   |   |-- CURLOPT_PROTOCOLS.3
+|   |   |   |-- CURLOPT_PROTOCOLS_STR.3
+|   |   |   |-- CURLOPT_PROXY.3
+|   |   |   |-- CURLOPT_PROXYAUTH.3
+|   |   |   |-- CURLOPT_PROXYHEADER.3
+|   |   |   |-- CURLOPT_PROXYPASSWORD.3
+|   |   |   |-- CURLOPT_PROXYPORT.3
+|   |   |   |-- CURLOPT_PROXYTYPE.3
+|   |   |   |-- CURLOPT_PROXYUSERNAME.3
+|   |   |   |-- CURLOPT_PROXYUSERPWD.3
+|   |   |   |-- CURLOPT_PROXY_CAINFO.3
+|   |   |   |-- CURLOPT_PROXY_CAINFO_BLOB.3
+|   |   |   |-- CURLOPT_PROXY_CAPATH.3
+|   |   |   |-- CURLOPT_PROXY_CRLFILE.3
+|   |   |   |-- CURLOPT_PROXY_ISSUERCERT.3
+|   |   |   |-- CURLOPT_PROXY_ISSUERCERT_BLOB.3
+|   |   |   |-- CURLOPT_PROXY_KEYPASSWD.3
+|   |   |   |-- CURLOPT_PROXY_PINNEDPUBLICKEY.3
+|   |   |   |-- CURLOPT_PROXY_SERVICE_NAME.3
+|   |   |   |-- CURLOPT_PROXY_SSLCERT.3
+|   |   |   |-- CURLOPT_PROXY_SSLCERTTYPE.3
+|   |   |   |-- CURLOPT_PROXY_SSLCERT_BLOB.3
+|   |   |   |-- CURLOPT_PROXY_SSLKEY.3
+|   |   |   |-- CURLOPT_PROXY_SSLKEYTYPE.3
+|   |   |   |-- CURLOPT_PROXY_SSLKEY_BLOB.3
+|   |   |   |-- CURLOPT_PROXY_SSLVERSION.3
+|   |   |   |-- CURLOPT_PROXY_SSL_CIPHER_LIST.3
+|   |   |   |-- CURLOPT_PROXY_SSL_OPTIONS.3
+|   |   |   |-- CURLOPT_PROXY_SSL_VERIFYHOST.3
+|   |   |   |-- CURLOPT_PROXY_SSL_VERIFYPEER.3
+|   |   |   |-- CURLOPT_PROXY_TLS13_CIPHERS.3
+|   |   |   |-- CURLOPT_PROXY_TLSAUTH_PASSWORD.3
+|   |   |   |-- CURLOPT_PROXY_TLSAUTH_TYPE.3
+|   |   |   |-- CURLOPT_PROXY_TLSAUTH_USERNAME.3
+|   |   |   |-- CURLOPT_PROXY_TRANSFER_MODE.3
+|   |   |   |-- CURLOPT_PUT.3
+|   |   |   |-- CURLOPT_QUICK_EXIT.3
+|   |   |   |-- CURLOPT_QUOTE.3
+|   |   |   |-- CURLOPT_RANDOM_FILE.3
+|   |   |   |-- CURLOPT_RANGE.3
+|   |   |   |-- CURLOPT_READDATA.3
+|   |   |   |-- CURLOPT_READFUNCTION.3
+|   |   |   |-- CURLOPT_REDIR_PROTOCOLS.3
+|   |   |   |-- CURLOPT_REDIR_PROTOCOLS_STR.3
+|   |   |   |-- CURLOPT_REFERER.3
+|   |   |   |-- CURLOPT_REQUEST_TARGET.3
+|   |   |   |-- CURLOPT_RESOLVE.3
+|   |   |   |-- CURLOPT_RESOLVER_START_DATA.3
+|   |   |   |-- CURLOPT_RESOLVER_START_FUNCTION.3
+|   |   |   |-- CURLOPT_RESUME_FROM.3
+|   |   |   |-- CURLOPT_RESUME_FROM_LARGE.3
+|   |   |   |-- CURLOPT_RTSP_CLIENT_CSEQ.3
+|   |   |   |-- CURLOPT_RTSP_REQUEST.3
+|   |   |   |-- CURLOPT_RTSP_SERVER_CSEQ.3
+|   |   |   |-- CURLOPT_RTSP_SESSION_ID.3
+|   |   |   |-- CURLOPT_RTSP_STREAM_URI.3
+|   |   |   |-- CURLOPT_RTSP_TRANSPORT.3
+|   |   |   |-- CURLOPT_SASL_AUTHZID.3
+|   |   |   |-- CURLOPT_SASL_IR.3
+|   |   |   |-- CURLOPT_SEEKDATA.3
+|   |   |   |-- CURLOPT_SEEKFUNCTION.3
+|   |   |   |-- CURLOPT_SERVER_RESPONSE_TIMEOUT.3
+|   |   |   |-- CURLOPT_SERVER_RESPONSE_TIMEOUT_MS.3
+|   |   |   |-- CURLOPT_SERVICE_NAME.3
+|   |   |   |-- CURLOPT_SHARE.3
+|   |   |   |-- CURLOPT_SOCKOPTDATA.3
+|   |   |   |-- CURLOPT_SOCKOPTFUNCTION.3
+|   |   |   |-- CURLOPT_SOCKS5_AUTH.3
+|   |   |   |-- CURLOPT_SOCKS5_GSSAPI_NEC.3
+|   |   |   |-- CURLOPT_SOCKS5_GSSAPI_SERVICE.3
+|   |   |   |-- CURLOPT_SSH_AUTH_TYPES.3
+|   |   |   |-- CURLOPT_SSH_COMPRESSION.3
+|   |   |   |-- CURLOPT_SSH_HOSTKEYDATA.3
+|   |   |   |-- CURLOPT_SSH_HOSTKEYFUNCTION.3
+|   |   |   |-- CURLOPT_SSH_HOST_PUBLIC_KEY_MD5.3
+|   |   |   |-- CURLOPT_SSH_HOST_PUBLIC_KEY_SHA256.3
+|   |   |   |-- CURLOPT_SSH_KEYDATA.3
+|   |   |   |-- CURLOPT_SSH_KEYFUNCTION.3
+|   |   |   |-- CURLOPT_SSH_KNOWNHOSTS.3
+|   |   |   |-- CURLOPT_SSH_PRIVATE_KEYFILE.3
+|   |   |   |-- CURLOPT_SSH_PUBLIC_KEYFILE.3
+|   |   |   |-- CURLOPT_SSLCERT.3
+|   |   |   |-- CURLOPT_SSLCERTTYPE.3
+|   |   |   |-- CURLOPT_SSLCERT_BLOB.3
+|   |   |   |-- CURLOPT_SSLENGINE.3
+|   |   |   |-- CURLOPT_SSLENGINE_DEFAULT.3
+|   |   |   |-- CURLOPT_SSLKEY.3
+|   |   |   |-- CURLOPT_SSLKEYTYPE.3
+|   |   |   |-- CURLOPT_SSLKEY_BLOB.3
+|   |   |   |-- CURLOPT_SSLVERSION.3
+|   |   |   |-- CURLOPT_SSL_CIPHER_LIST.3
+|   |   |   |-- CURLOPT_SSL_CTX_DATA.3
+|   |   |   |-- CURLOPT_SSL_CTX_FUNCTION.3
+|   |   |   |-- CURLOPT_SSL_EC_CURVES.3
+|   |   |   |-- CURLOPT_SSL_ENABLE_ALPN.3
+|   |   |   |-- CURLOPT_SSL_ENABLE_NPN.3
+|   |   |   |-- CURLOPT_SSL_FALSESTART.3
+|   |   |   |-- CURLOPT_SSL_OPTIONS.3
+|   |   |   |-- CURLOPT_SSL_SESSIONID_CACHE.3
+|   |   |   |-- CURLOPT_SSL_VERIFYHOST.3
+|   |   |   |-- CURLOPT_SSL_VERIFYPEER.3
+|   |   |   |-- CURLOPT_SSL_VERIFYSTATUS.3
+|   |   |   |-- CURLOPT_STDERR.3
+|   |   |   |-- CURLOPT_STREAM_DEPENDS.3
+|   |   |   |-- CURLOPT_STREAM_DEPENDS_E.3
+|   |   |   |-- CURLOPT_STREAM_WEIGHT.3
+|   |   |   |-- CURLOPT_SUPPRESS_CONNECT_HEADERS.3
+|   |   |   |-- CURLOPT_TCP_FASTOPEN.3
+|   |   |   |-- CURLOPT_TCP_KEEPALIVE.3
+|   |   |   |-- CURLOPT_TCP_KEEPCNT.3
+|   |   |   |-- CURLOPT_TCP_KEEPIDLE.3
+|   |   |   |-- CURLOPT_TCP_KEEPINTVL.3
+|   |   |   |-- CURLOPT_TCP_NODELAY.3
+|   |   |   |-- CURLOPT_TELNETOPTIONS.3
+|   |   |   |-- CURLOPT_TFTP_BLKSIZE.3
+|   |   |   |-- CURLOPT_TFTP_NO_OPTIONS.3
+|   |   |   |-- CURLOPT_TIMECONDITION.3
+|   |   |   |-- CURLOPT_TIMEOUT.3
+|   |   |   |-- CURLOPT_TIMEOUT_MS.3
+|   |   |   |-- CURLOPT_TIMEVALUE.3
+|   |   |   |-- CURLOPT_TIMEVALUE_LARGE.3
+|   |   |   |-- CURLOPT_TLS13_CIPHERS.3
+|   |   |   |-- CURLOPT_TLSAUTH_PASSWORD.3
+|   |   |   |-- CURLOPT_TLSAUTH_TYPE.3
+|   |   |   |-- CURLOPT_TLSAUTH_USERNAME.3
+|   |   |   |-- CURLOPT_TRAILERDATA.3
+|   |   |   |-- CURLOPT_TRAILERFUNCTION.3
+|   |   |   |-- CURLOPT_TRANSFERTEXT.3
+|   |   |   |-- CURLOPT_TRANSFER_ENCODING.3
+|   |   |   |-- CURLOPT_UNIX_SOCKET_PATH.3
+|   |   |   |-- CURLOPT_UNRESTRICTED_AUTH.3
+|   |   |   |-- CURLOPT_UPKEEP_INTERVAL_MS.3
+|   |   |   |-- CURLOPT_UPLOAD.3
+|   |   |   |-- CURLOPT_UPLOAD_BUFFERSIZE.3
+|   |   |   |-- CURLOPT_UPLOAD_FLAGS.3
+|   |   |   |-- CURLOPT_URL.3
+|   |   |   |-- CURLOPT_USERAGENT.3
+|   |   |   |-- CURLOPT_USERNAME.3
+|   |   |   |-- CURLOPT_USERPWD.3
+|   |   |   |-- CURLOPT_USE_SSL.3
+|   |   |   |-- CURLOPT_VERBOSE.3
+|   |   |   |-- CURLOPT_WILDCARDMATCH.3
+|   |   |   |-- CURLOPT_WRITEDATA.3
+|   |   |   |-- CURLOPT_WRITEFUNCTION.3
+|   |   |   |-- CURLOPT_WS_OPTIONS.3
+|   |   |   |-- CURLOPT_XFERINFODATA.3
+|   |   |   |-- CURLOPT_XFERINFOFUNCTION.3
+|   |   |   |-- CURLOPT_XOAUTH2_BEARER.3
+|   |   |   |-- CURLSHOPT_LOCKFUNC.3
+|   |   |   |-- CURLSHOPT_SHARE.3
+|   |   |   |-- CURLSHOPT_UNLOCKFUNC.3
+|   |   |   |-- CURLSHOPT_UNSHARE.3
+|   |   |   |-- CURLSHOPT_USERDATA.3
+|   |   |   |-- curl-config.1
+|   |   |   |-- curl.1
+|   |   |   |-- curl_easy_cleanup.3
+|   |   |   |-- curl_easy_duphandle.3
+|   |   |   |-- curl_easy_escape.3
+|   |   |   |-- curl_easy_getinfo.3
+|   |   |   |-- curl_easy_header.3
+|   |   |   |-- curl_easy_init.3
+|   |   |   |-- curl_easy_nextheader.3
+|   |   |   |-- curl_easy_option_by_id.3
+|   |   |   |-- curl_easy_option_by_name.3
+|   |   |   |-- curl_easy_option_next.3
+|   |   |   |-- curl_easy_pause.3
+|   |   |   |-- curl_easy_perform.3
+|   |   |   |-- curl_easy_recv.3
+|   |   |   |-- curl_easy_reset.3
+|   |   |   |-- curl_easy_send.3
+|   |   |   |-- curl_easy_setopt.3
+|   |   |   |-- curl_easy_ssls_export.3
+|   |   |   |-- curl_easy_ssls_import.3
+|   |   |   |-- curl_easy_strerror.3
+|   |   |   |-- curl_easy_unescape.3
+|   |   |   |-- curl_easy_upkeep.3
+|   |   |   |-- curl_escape.3
+|   |   |   |-- curl_formadd.3
+|   |   |   |-- curl_formfree.3
+|   |   |   |-- curl_formget.3
+|   |   |   |-- curl_free.3
+|   |   |   |-- curl_getdate.3
+|   |   |   |-- curl_getenv.3
+|   |   |   |-- curl_global_cleanup.3
+|   |   |   |-- curl_global_init.3
+|   |   |   |-- curl_global_init_mem.3
+|   |   |   |-- curl_global_sslset.3
+|   |   |   |-- curl_global_trace.3
+|   |   |   |-- curl_mime_addpart.3
+|   |   |   |-- curl_mime_data.3
+|   |   |   |-- curl_mime_data_cb.3
+|   |   |   |-- curl_mime_encoder.3
+|   |   |   |-- curl_mime_filedata.3
+|   |   |   |-- curl_mime_filename.3
+|   |   |   |-- curl_mime_free.3
+|   |   |   |-- curl_mime_headers.3
+|   |   |   |-- curl_mime_init.3
+|   |   |   |-- curl_mime_name.3
+|   |   |   |-- curl_mime_subparts.3
+|   |   |   |-- curl_mime_type.3
+|   |   |   |-- curl_mprintf.3
+|   |   |   |-- curl_multi_add_handle.3
+|   |   |   |-- curl_multi_assign.3
+|   |   |   |-- curl_multi_cleanup.3
+|   |   |   |-- curl_multi_fdset.3
+|   |   |   |-- curl_multi_get_handles.3
+|   |   |   |-- curl_multi_info_read.3
+|   |   |   |-- curl_multi_init.3
+|   |   |   |-- curl_multi_perform.3
+|   |   |   |-- curl_multi_poll.3
+|   |   |   |-- curl_multi_remove_handle.3
+|   |   |   |-- curl_multi_setopt.3
+|   |   |   |-- curl_multi_socket.3
+|   |   |   |-- curl_multi_socket_action.3
+|   |   |   |-- curl_multi_socket_all.3
+|   |   |   |-- curl_multi_strerror.3
+|   |   |   |-- curl_multi_timeout.3
+|   |   |   |-- curl_multi_wait.3
+|   |   |   |-- curl_multi_waitfds.3
+|   |   |   |-- curl_multi_wakeup.3
+|   |   |   |-- curl_pushheader_byname.3
+|   |   |   |-- curl_pushheader_bynum.3
+|   |   |   |-- curl_share_cleanup.3
+|   |   |   |-- curl_share_init.3
+|   |   |   |-- curl_share_setopt.3
+|   |   |   |-- curl_share_strerror.3
+|   |   |   |-- curl_slist_append.3
+|   |   |   |-- curl_slist_free_all.3
+|   |   |   |-- curl_strequal.3
+|   |   |   |-- curl_strnequal.3
+|   |   |   |-- curl_unescape.3
+|   |   |   |-- curl_url.3
+|   |   |   |-- curl_url_cleanup.3
+|   |   |   |-- curl_url_dup.3
+|   |   |   |-- curl_url_get.3
+|   |   |   |-- curl_url_set.3
+|   |   |   |-- curl_url_strerror.3
+|   |   |   |-- curl_version.3
+|   |   |   |-- curl_version_info.3
+|   |   |   |-- curl_ws_meta.3
+|   |   |   |-- curl_ws_recv.3
+|   |   |   |-- curl_ws_send.3
+|   |   |   |-- libcurl-easy.3
+|   |   |   |-- libcurl-env-dbg.3
+|   |   |   |-- libcurl-env.3
+|   |   |   |-- libcurl-errors.3
+|   |   |   |-- libcurl-multi.3
+|   |   |   |-- libcurl-security.3
+|   |   |   |-- libcurl-share.3
+|   |   |   |-- libcurl-symbols.3
+|   |   |   |-- libcurl-thread.3
+|   |   |   |-- libcurl-tutorial.3
+|   |   |   |-- libcurl-url.3
+|   |   |   |-- libcurl-ws.3
+|   |   |   |-- libcurl.3
+|   |   |   `-- mk-ca-bundle.1
+|   |   |-- sources
+|   |   `-- version
+|   |-- flex
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- gcc
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- files
+|   |   |   `-- c99
+|   |   |-- sources
+|   |   `-- version
+|   |-- git
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- glibc
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- files
+|   |   |   |-- ldd
+|   |   |   |-- locale-gen
+|   |   |   `-- sotruss
+|   |   |-- post-install
+|   |   |-- sources
+|   |   `-- version
+|   |-- gmp
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- grub
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- files
+|   |   |   |-- grub.default
+|   |   |   `-- help2man
+|   |   |-- patches
+|   |   |   `-- no-asorti.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- kiss
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- files
+|   |   |   `-- no-perl.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- libmpc
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- linux-headers
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- m4
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- make
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- mpfr
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- openssl
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- pigz
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- post-install
+|   |   |-- sources
+|   |   `-- version
+|   |-- xz
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   `-- zlib
+|       |-- README
+|       |-- build
+|       |-- checksums
+|       |-- sources
+|       `-- version
+|-- extra
+|   |-- adwaita-icon-theme
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- alsa-lib
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- alsa-utils
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- bkeymaps
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- cairo
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- cbindgen
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- ccache
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- post-install
+|   |   |-- sources
+|   |   `-- version
+|   |-- clang
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- patches
+|   |   |   `-- musl-targets.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- cmake
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- cyrus-sasl
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- patches
+|   |   |   `-- gcc-14.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- dhcpcd
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- files
+|   |   |   `-- dhcpcd.run
+|   |   |-- sources
+|   |   `-- version
+|   |-- dosfstools
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- e2fsprogs
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- efibootmgr
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- efivar
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- eiwd
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- files
+|   |   |   |-- eiwd.run
+|   |   |   `-- iwd_passphrase
+|   |   |-- post-install
+|   |   |-- sources
+|   |   `-- version
+|   |-- expat
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- ffmpeg
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- patches
+|   |   |   `-- gcc-14.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- firefox
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- patches
+|   |   |   |-- fix-sqlite-vec-uint.patch
+|   |   |   |-- fix-target-detection.patch
+|   |   |   |-- fix-vaapi.patch
+|   |   |   |-- gcc-14.patch
+|   |   |   |-- mach-python-3.13.1.patch
+|   |   |   |-- musl-sandbox.patch
+|   |   |   |-- no-atk.patch
+|   |   |   |-- no-dbus.patch
+|   |   |   `-- no-fribidi.patch
+|   |   |-- post-install
+|   |   |-- sources
+|   |   `-- version
+|   |-- firefox-privacy
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- files
+|   |   |   |-- policies.json
+|   |   |   `-- vendor.js
+|   |   |-- sources
+|   |   `-- version
+|   |-- fontconfig
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- files
+|   |   |   `-- fcobjshash.h
+|   |   |-- patches
+|   |   |   `-- no-gperf.patch
+|   |   |-- post-install
+|   |   |-- sources
+|   |   `-- version
+|   |-- freetype-harfbuzz
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- gdk-pixbuf
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- giflib
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- glib
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- gnugrep
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- gtk+3
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- patches
+|   |   |   |-- 01-no-fribidi.patch
+|   |   |   |-- 02-no-accessibility.patch
+|   |   |   `-- 03-no-atk-extra.patch
+|   |   |-- post-install
+|   |   |-- sources
+|   |   `-- version
+|   |-- hicolor-icon-theme
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- hwdata
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- intel-vaapi-driver
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- patches
+|   |   |   `-- wl_drm-optional.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- json-c
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- kirc
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- lame
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- libass
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- patches
+|   |   |   `-- no-fribidi.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- libclc
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- libdisplay-info
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- libdrm
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- libelf
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- patches
+|   |   |   `-- musl.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- libepoxy
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- liberation-fonts
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- libevdev
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- libffi
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- libglvnd
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- libinput
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- post-install
+|   |   |-- sources
+|   |   `-- version
+|   |-- libjpeg-turbo
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- patches
+|   |   |   `-- no-docs.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- libnl-tiny
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- patches
+|   |   |   `-- nla_s8.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- libogg
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- libpciaccess
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- patches
+|   |   |   `-- lfs64.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- libplacebo
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- patches
+|   |   |   `-- no-vulkan-headers.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- libpng
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- patches
+|   |   |   `-- apng.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- libretls
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- libtheora
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- libudev-zero
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- libva
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- libva-utils
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- libvorbis
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- libvpx
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- files
+|   |   |   |-- vp8_rtcd.h
+|   |   |   |-- vp9_rtcd.h
+|   |   |   |-- vpx_dsp_rtcd.h
+|   |   |   `-- vpx_scale_rtcd.h
+|   |   |-- sources
+|   |   `-- version
+|   |-- libwebp
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- libxcrypt
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- libxkbcommon
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- llvm
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- patches
+|   |   |   `-- musl-stack-size.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- man-pages
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- post-install
+|   |   |-- sources
+|   |   `-- version
+|   |-- mandoc
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- patches
+|   |   |   `-- mandoc-no-warn.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- mdevd
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- files
+|   |   |   |-- mdevd.conf
+|   |   |   `-- mdevd.run
+|   |   |-- sources
+|   |   `-- version
+|   |-- mesa
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- post-install
+|   |   |-- sources
+|   |   `-- version
+|   |-- meson
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- mold
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- patches
+|   |   |   `-- amd64_only.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- mpv
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- mtdev
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- mutt
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- nasm
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- ncurses
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- files
+|   |   |   `-- terminfo.src
+|   |   |-- sources
+|   |   `-- version
+|   |-- nodejs
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- nspr
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- nss
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- files
+|   |   |   |-- certdata.sh
+|   |   |   `-- generated.hash
+|   |   |-- patches
+|   |   |   `-- no-perl.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- opendoas
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- files
+|   |   |   `-- doas.conf
+|   |   |-- sources
+|   |   `-- version
+|   |-- openresolv
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- openssh
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- files
+|   |   |   `-- sshd.run
+|   |   |-- post-install
+|   |   |-- sources
+|   |   `-- version
+|   |-- opus
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- pango
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- patches
+|   |   |   `-- no-fribidi.patch
+|   |   |-- post-install
+|   |   |-- sources
+|   |   `-- version
+|   |-- pcre2
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- pixman
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- pkgconf
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- python
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- patches
+|   |   |   |-- python3-always-pip.patch
+|   |   |   `-- python3-pyc-hash.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- python-docutils
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- python-flit-core
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- python-glad
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- python-gpep517
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- files
+|   |   |   `-- gpep517.bin
+|   |   |-- patches
+|   |   |   `-- default-bytecode-levels.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- python-installer
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- patches
+|   |   |   `-- default-bytecode-levels.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- python-jinja2
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- python-mako
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- python-markupsafe
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- python-packaging
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- python-setuptools
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- python-wheel
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- python-yaml
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- rust
+|   |   |-- build
+|   |   |-- sources
+|   |   `-- version
+|   |-- samurai
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- scdoc
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- skalibs
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- spirv-headers
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- spirv-llvm-translator
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- spirv-tools
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- sqlite
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- ssu
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- post-install
+|   |   |-- sources
+|   |   `-- version
+|   |-- strace
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- ttf-croscore
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- post-install
+|   |   |-- sources
+|   |   `-- version
+|   |-- tzdata
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- util-linux
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- patches
+|   |   |   `-- posix.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- vim
+|   |   |-- README
+|   |   |-- build
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- wpa_supplicant
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- files
+|   |   |   `-- wpa_supplicant.run
+|   |   |-- sources
+|   |   `-- version
+|   |-- x264
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- patches
+|   |   |   `-- portability.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- x265
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- patches
+|   |   |   `-- cmake-4.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- xvidcore
+|   |   |-- README
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   `-- zstd
+|       |-- README
+|       |-- build
+|       |-- checksums
+|       |-- sources
+|       `-- version
+|-- mi_estructura.txt
+|-- nvidia
+|   |-- mesa
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- nvidia
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- files
+|   |   |   |-- 0001-Fix-conftest-to-ignore-implicit-function-declaration.patch
+|   |   |   |-- 0002-Fix-conftest-to-use-a-short-wchar_t.patch
+|   |   |   |-- 0003-Fix-conftest-to-use-nv_drm_gem_vmap-which-has-the-se.patch
+|   |   |   |-- gcc-15.patch
+|   |   |   |-- kernel-6.10.patch
+|   |   |   |-- kernel-6.12.patch
+|   |   |   |-- nvidia-470xx-fix-linux-6.13.patch
+|   |   |   |-- nvidia-470xx-fix-linux-6.14.patch
+|   |   |   `-- nvidia-470xx-fix-linux-6.15.patch
+|   |   |-- sources
+|   |   `-- version
+|   `-- xorg-server
+|       |-- build
+|       |-- checksums
+|       |-- depends
+|       |-- esources
+|       |-- patches
+|       |   |-- fix-crash.patch
+|       |   `-- rootless_modesetting.patch
+|       |-- post-install
+|       |-- sources
+|       `-- version
+|-- testing
+|   |-- README
+|   |-- README.md
+|   |-- apulse
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- patches
+|   |   |   `-- musl.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- awesome
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- bash
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- files
+|   |   |   `-- bash-5.2-mkbuiltins-ansi.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- basu
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- bluez
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- files
+|   |   |   `-- bluetoothd.run
+|   |   |-- sources
+|   |   `-- version
+|   |-- dbus
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- files
+|   |   |   `-- dbus.run
+|   |   |-- post-install
+|   |   |-- pre-remove
+|   |   |-- sources
+|   |   `-- version
+|   |-- dbus-glib
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- dunst
+|   |   |-- build
+|   |   |-- sources
+|   |   `-- version
+|   |-- fastfetch
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- fnott
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- freetype-harfbuzz
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- gettext
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- glslang
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- manifest
+|   |   |-- sources
+|   |   `-- version
+|   |-- gobject-introspection
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- gtk+3
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- patches
+|   |   |   |-- 01-no-fribidi.patch
+|   |   |   |-- 02-no-accessibility.patch
+|   |   |   `-- 03-no-atk-extra.patch
+|   |   |-- post-install
+|   |   |-- sources
+|   |   `-- version
+|   |-- gzip
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- manifest
+|   |   |-- sources
+|   |   `-- version
+|   |-- inih
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- intel-gmmlib
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- manifest
+|   |   |-- sources
+|   |   `-- version
+|   |-- intel-media-driver
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- manifest
+|   |   |-- sources
+|   |   `-- version
+|   |-- kiss-meson
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- files
+|   |   |   `-- kiss-meson
+|   |   |-- post-install
+|   |   |-- sources
+|   |   `-- version
+|   |-- libconfig
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- libpulse
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- libunwind
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- manifest
+|   |   |-- sources
+|   |   `-- version
+|   |-- liburcu
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- libxdg-basedir
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- lld
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- lua
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- files
+|   |   |   `-- lua.pc
+|   |   |-- sources
+|   |   `-- version
+|   |-- luarocks
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- mako
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- mesa
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- sources
+|   |   `-- version
+|   |-- pango
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- esources
+|   |   |-- patches
+|   |   |   `-- no-fribidi.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- robin-hood-hashing
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- shaderc
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- spirv-headers
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- spirv-tools
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- startup-notification
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- texinfo
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- vulkan-headers
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- vulkan-loader
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- vulkan-utility-libraries
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- sources
+|   |   `-- version
+|   |-- vulkan-validation-layers
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   |-- xdg-desktop-portal
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- patches
+|   |   |   `-- no-xdp-validate-sound.patch
+|   |   |-- sources
+|   |   `-- version
+|   |-- xdg-desktop-portal-wlr
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- files
+|   |   |   `-- wlr-portals.conf
+|   |   |-- post-install
+|   |   |-- sources
+|   |   `-- version
+|   |-- xfsprogs
+|   |   |-- build
+|   |   |-- checksums
+|   |   |-- depends
+|   |   |-- sources
+|   |   `-- version
+|   `-- zutty
+|       |-- build
+|       |-- sources
+|       `-- version
+`-- xorg
+    |-- libICE
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-lib
+    |   |-- sources
+    |   `-- version
+    |-- libSM
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-lib
+    |   |-- sources
+    |   `-- version
+    |-- libX11
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-lib
+    |   |-- sources
+    |   `-- version
+    |-- libXScrnSaver
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-lib
+    |   |-- sources
+    |   `-- version
+    |-- libXau
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-lib
+    |   |-- sources
+    |   `-- version
+    |-- libXaw
+    |   |-- build -> ../../xorg/libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-lib
+    |   |-- sources
+    |   `-- version
+    |-- libXcomposite
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-lib
+    |   |-- sources
+    |   `-- version
+    |-- libXcursor
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-lib
+    |   |-- sources
+    |   `-- version
+    |-- libXdamage
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-lib
+    |   |-- sources
+    |   `-- version
+    |-- libXdmcp
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-lib
+    |   |-- sources
+    |   `-- version
+    |-- libXext
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-lib
+    |   |-- sources
+    |   `-- version
+    |-- libXfixes
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-lib
+    |   |-- sources
+    |   `-- version
+    |-- libXfont
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-lib
+    |   |-- sources
+    |   `-- version
+    |-- libXfont2
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-lib
+    |   |-- sources
+    |   `-- version
+    |-- libXft
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-lib
+    |   |-- sources
+    |   `-- version
+    |-- libXi
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-lib
+    |   |-- sources
+    |   `-- version
+    |-- libXinerama
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-lib
+    |   |-- sources
+    |   `-- version
+    |-- libXmeta
+    |   |-- build
+    |   |-- sources-app
+    |   |-- sources-data
+    |   |-- sources-driver
+    |   |-- sources-lib
+    |   |-- sources-proto
+    |   `-- sources-xcb
+    |-- libXmu
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-lib
+    |   |-- sources
+    |   `-- version
+    |-- libXpm
+    |   |-- build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-lib
+    |   |-- sources
+    |   `-- version
+    |-- libXpresent
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-lib
+    |   |-- sources
+    |   `-- version
+    |-- libXrandr
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-lib
+    |   |-- sources
+    |   `-- version
+    |-- libXrender
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-lib
+    |   |-- sources
+    |   `-- version
+    |-- libXres
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-lib
+    |   |-- sources
+    |   `-- version
+    |-- libXt
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-lib
+    |   |-- sources
+    |   `-- version
+    |-- libXtst
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-lib
+    |   |-- sources
+    |   `-- version
+    |-- libXv
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-lib
+    |   |-- sources
+    |   `-- version
+    |-- libXxf86vm
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-lib
+    |   |-- sources
+    |   `-- version
+    |-- libfontenc
+    |   |-- build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-lib
+    |   |-- sources
+    |   `-- version
+    |-- libxcb
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-lib
+    |   |-- sources
+    |   `-- version
+    |-- libxcvt
+    |   |-- build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources
+    |   |-- sources
+    |   `-- version
+    |-- libxdmcp
+    |   |-- build
+    |   |-- checksums
+    |   |-- sources
+    |   `-- version
+    |-- libxkbfile
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-lib
+    |   |-- sources
+    |   `-- version
+    |-- libxshmfence
+    |   |-- build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-lib
+    |   |-- sources
+    |   `-- version
+    |-- mkfontscale
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-app
+    |   |-- sources
+    |   `-- version
+    |-- setxkbmap
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-app
+    |   |-- sources
+    |   `-- version
+    |-- sowm
+    |   |-- build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources
+    |   |-- sources
+    |   `-- version
+    |-- st
+    |   |-- build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources
+    |   |-- sources
+    |   `-- version
+    |-- tinyx
+    |   |-- README.md
+    |   |-- build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources
+    |   |-- sources
+    |   `-- version
+    |-- twm
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-app
+    |   |-- sources
+    |   `-- version
+    |-- xauth
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-app
+    |   |-- sources
+    |   `-- version
+    |-- xbitmaps
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-data
+    |   |-- sources
+    |   `-- version
+    |-- xcb-proto
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-proto
+    |   |-- sources
+    |   `-- version
+    |-- xcb-util
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-xcb
+    |   |-- sources
+    |   `-- version
+    |-- xcb-util-cursor
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-xcb
+    |   |-- sources
+    |   `-- version
+    |-- xcb-util-image
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-xcb
+    |   |-- sources
+    |   `-- version
+    |-- xcb-util-keysyms
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-xcb
+    |   |-- sources
+    |   `-- version
+    |-- xcb-util-renderutil
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-xcb
+    |   |-- sources
+    |   `-- version
+    |-- xcb-util-wm
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-xcb
+    |   |-- sources
+    |   `-- version
+    |-- xcursorgen
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-app
+    |   |-- sources
+    |   `-- version
+    |-- xdpyinfo
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-app
+    |   |-- sources
+    |   `-- version
+    |-- xenocara
+    |   |-- build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- patches
+    |   |   |-- remove-forced-openbsd-getdtablecount-function-support.patch
+    |   |   |-- remove-forced-openbsd-mmap-flag-support.patch
+    |   |   `-- rootless_modesetting.patch
+    |   |-- sources
+    |   `-- version
+    |-- xev
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-app
+    |   |-- sources
+    |   `-- version
+    |-- xf86-input-evdev
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-driver
+    |   |-- sources
+    |   `-- version
+    |-- xf86-input-libinput
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-driver
+    |   |-- sources
+    |   `-- version
+    |-- xf86-video-amdgpu
+    |   |-- build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources
+    |   |-- patches
+    |   |   `-- rootless_modesetting.patch
+    |   |-- sources
+    |   `-- version
+    |-- xf86-video-ati
+    |   |-- build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources
+    |   |-- patches
+    |   |   `-- rootless_modesetting.patch
+    |   |-- sources
+    |   `-- version
+    |-- xf86-video-intel
+    |   |-- build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources
+    |   |-- sources
+    |   `-- version
+    |-- xf86-video-nouveau
+    |   |-- build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources
+    |   |-- patches
+    |   |   |-- fix-xorg-21.1.diff
+    |   |   `-- rootless_modesetting.patch
+    |   |-- sources
+    |   `-- version
+    |-- xf86-video-vesa
+    |   |-- build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources
+    |   |-- sources
+    |   `-- version
+    |-- xinit
+    |   |-- build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-app
+    |   |-- sources
+    |   `-- version
+    |-- xinput
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-app
+    |   |-- sources
+    |   `-- version
+    |-- xkbcomp
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-app
+    |   |-- sources
+    |   `-- version
+    |-- xkeyboard-config
+    |   |-- build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources
+    |   |-- files
+    |   |   `-- xml2lst
+    |   |-- sources
+    |   `-- version
+    |-- xorg-font-util
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources
+    |   |-- sources
+    |   `-- version
+    |-- xorg-server
+    |   |-- build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources
+    |   |-- patches
+    |   |   |-- fix-crash.patch
+    |   |   `-- rootless_modesetting.patch
+    |   |-- post-install
+    |   |-- sources
+    |   `-- version
+    |-- xorg-util-macros
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- esources
+    |   |-- sources
+    |   `-- version
+    |-- xorgproto
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- esources -> ../libXmeta/sources-proto
+    |   |-- sources
+    |   `-- version
+    |-- xprop
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-app
+    |   |-- sources
+    |   `-- version
+    |-- xrandr
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-app
+    |   |-- sources
+    |   `-- version
+    |-- xrdb
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-app
+    |   |-- sources
+    |   `-- version
+    |-- xrectsel
+    |   |-- build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources
+    |   |-- sources
+    |   `-- version
+    |-- xset
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-app
+    |   |-- sources
+    |   `-- version
+    |-- xsetroot
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-app
+    |   |-- sources
+    |   `-- version
+    |-- xtrans
+    |   |-- build -> ../libXmeta/build
+    |   |-- checksums
+    |   |-- depends
+    |   |-- esources -> ../libXmeta/sources-lib
+    |   |-- sources
+    |   `-- version
+    `-- xwininfo
+        |-- build -> ../libXmeta/build
+        |-- checksums
+        |-- depends
+        |-- esources -> ../libXmeta/sources-app
+        |-- sources
+        `-- version
+
+1023 directories, 5317 files
