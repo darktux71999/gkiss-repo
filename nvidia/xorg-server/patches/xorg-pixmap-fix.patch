@@ -1,0 +1,127 @@
+diff --git a/dix/main.c b/dix/main.c
+index d87bb23680..222adf96b8 100644
+--- a/dix/main.c
++++ b/dix/main.c
+@@ -204,18 +204,20 @@ dix_main(int argc, char *argv[], char *envp[])
+ 
+         for (i = 0; i < screenInfo.numGPUScreens; i++) {
+               ScreenPtr pScreen = screenInfo.gpuscreens[i];
+-              if (!PixmapScreenInit(pScreen))
+-                  FatalError("failed to create screen pixmap properties");
+-              if (!dixScreenRaiseCreateResources(pScreen))
++              if (!CreateScratchPixmapsForScreen(pScreen))
++                  FatalError("failed to create scratch pixmaps");
++              if (pScreen->CreateScreenResources &&
++                  !(*pScreen->CreateScreenResources) (pScreen))
+                   FatalError("failed to create screen resources");
+         }
+ 
+         for (i = 0; i < screenInfo.numScreens; i++) {
+               ScreenPtr pScreen = screenInfo.screens[i];
+ 
+-              if (!PixmapScreenInit(pScreen))
+-                  FatalError("failed to create screen pixmap properties");
+-              if (!dixScreenRaiseCreateResources(pScreen))
++              if (!CreateScratchPixmapsForScreen(pScreen))
++                  FatalError("failed to create scratch pixmaps");
++              if (pScreen->CreateScreenResources &&
++                  !(*pScreen->CreateScreenResources) (pScreen))
+                   FatalError("failed to create screen resources");
+               if (!CreateGCperDepth(i))
+                   FatalError("failed to create scratch GCs");
+@@ -321,13 +323,22 @@ dix_main(int argc, char *argv[], char *envp[])
+         CloseDownEvents();
+ 
+         for (i = screenInfo.numGPUScreens - 1; i >= 0; i--) {
+-              dixFreeScreen(screenInfo.gpuscreens[i]);
++              ScreenPtr pScreen = screenInfo.gpuscreens[i];
++              FreeScratchPixmapsForScreen(pScreen);
++              dixFreeScreenSpecificPrivates(pScreen);
++              (*pScreen->CloseScreen) (pScreen);
++              dixFreePrivates(pScreen->devPrivates, PRIVATE_SCREEN);
++              free(pScreen);
+               screenInfo.numGPUScreens = i;
+         }
+         memset(&screenInfo.numGPUScreens, 0, sizeof(screenInfo.numGPUScreens));
+ 
+         for (i = screenInfo.numScreens - 1; i >= 0; i--) {
+-              dixFreeScreen(screenInfo.screens[i]);
++              FreeScratchPixmapsForScreen(screenInfo.screens[i]);
++              dixFreeScreenSpecificPrivates(screenInfo.screens[i]);
++              (*screenInfo.screens[i]->CloseScreen) (screenInfo.screens[i]);
++              dixFreePrivates(screenInfo.screens[i]->devPrivates, PRIVATE_SCREEN);
++              free(screenInfo.screens[i]);
+               screenInfo.numScreens = i;
+         }
+         memset(&screenInfo.screens, 0, sizeof(screenInfo.numGPUScreens));
+diff --git a/dix/pixmap.c b/dix/pixmap.c
+index f7812804a7..317b4c2529 100644
+--- a/dix/pixmap.c
++++ b/dix/pixmap.c
+@@ -79,7 +79,7 @@ FreeScratchPixmapHeader(PixmapPtr pPixmap)
+ }
+ 
+ Bool
+-PixmapScreenInit(ScreenPtr pScreen)
++CreateScratchPixmapsForScreen(ScreenPtr pScreen)
+ {
+     unsigned int pixmap_size;
+ 
+@@ -87,9 +87,16 @@ PixmapScreenInit(ScreenPtr pScreen)
+     pScreen->totalPixmapSize =
+         BitmapBytePad(pixmap_size * 8);
+ 
++    /* NULL this out as it is no longer used */
++    pScreen->pScratchPixmap = NULL;
+     return TRUE;
+ }
+ 
++void
++FreeScratchPixmapsForScreen(ScreenPtr pScreen)
++{
++}
++
+ /* callable by ddx */
+ PixmapPtr
+ AllocatePixmap(ScreenPtr pScreen, int pixDataSize)
+diff --git a/hw/xfree86/common/xf86platformBus.c b/hw/xfree86/common/xf86platformBus.c
+index f2fb4bd976..4698d3dd37 100644
+--- a/hw/xfree86/common/xf86platformBus.c
++++ b/hw/xfree86/common/xf86platformBus.c
+@@ -723,7 +723,7 @@ xf86platformAddDevice(const char *driver_name, int index)
+     dixSetPrivate(&xf86GPUScreens[i]->pScreen->devPrivates,
+                   xf86ScreenKey, xf86GPUScreens[i]);
+ 
+-   PixmapScreenInit(xf86GPUScreens[i]->pScreen);
++   CreateScratchPixmapsForScreen(xf86GPUScreens[i]->pScreen);
+ 
+    if (dixScreenRaiseCreateResources(xf86GPUScreens[i]->pScreen)) {
+        RemoveGPUScreen(xf86GPUScreens[i]->pScreen);
+diff --git a/include/pixmap.h b/include/pixmap.h
+index be6df98900..e251690d56 100644
+--- a/include/pixmap.h
++++ b/include/pixmap.h
+@@ -103,7 +103,9 @@ extern _X_EXPORT PixmapPtr GetScratchPixmapHeader(ScreenPtr pScreen,
+ 
+ extern _X_EXPORT void FreeScratchPixmapHeader(PixmapPtr /*pPixmap */ );
+ 
+-extern _X_EXPORT Bool PixmapScreenInit(ScreenPtr /*pScreen */ );
++extern _X_EXPORT Bool CreateScratchPixmapsForScreen(ScreenPtr /*pScreen */ );
++
++extern _X_EXPORT void FreeScratchPixmapsForScreen(ScreenPtr /*pScreen */ );
+ 
+ extern _X_EXPORT PixmapPtr AllocatePixmap(ScreenPtr /*pScreen */ ,
+                                           int /*pixDataSize */ );
+diff --git a/include/scrnintstr.h b/include/scrnintstr.h
+index 71ef762ea0..a51144cbcc 100644
+--- a/include/scrnintstr.h
++++ b/include/scrnintstr.h
+@@ -620,6 +620,8 @@ typedef struct _Screen {
+     SetScreenPixmapProcPtr SetScreenPixmap;
+     NameWindowPixmapProcPtr NameWindowPixmap;
+ 
++    PixmapPtr pScratchPixmap;    /* scratch pixmap "pool" (unused / NULL in modern servers) */
++
+     unsigned int totalPixmapSize;
+ 
+     MarkWindowProcPtr MarkWindow;
