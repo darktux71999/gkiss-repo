@@ -1,0 +1,13 @@
+diff --git a/include/scrnintstr.h b/include/scrnintstr.h
+index 71ef762ea0..a51144cbcc 100644
+--- a/include/scrnintstr.h
++++ b/include/scrnintstr.h
+@@ -620,6 +620,8 @@ typedef struct _Screen {
+     SetScreenPixmapProcPtr SetScreenPixmap;
+     NameWindowPixmapProcPtr NameWindowPixmap;
+ 
++    PixmapPtr pScratchPixmap;   /* scratch pixmap "pool" (unused / NULL in modern servers) */
++
+     unsigned int totalPixmapSize;
+ 
+     MarkWindowProcPtr MarkWindow;
