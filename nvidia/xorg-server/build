@@ -25,7 +25,6 @@ meson setup \
     -Dxephyr=false \
     -Dxdmcp=false \
     -Ddefault_font_path=/usr/share/fonts \
-    -Dsecure-rpc=false \
     output
 
 ninja -C output
