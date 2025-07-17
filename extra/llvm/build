@@ -22,7 +22,7 @@ cmake -G Ninja -B build \
     -Wno-dev
 
 # Compilar con 4 hilos en paralelo
-ninja -j4 -C build
+ninja -j20 -C build
 cmake --install build
 
 # Use new llvm-config to generate a pkg-config file.

@@ -1,7 +1,6 @@
 #!/bin/sh -e
 
-cargo fetch \
-    --locked
+cargo fetch 
 
 cargo install \
     --frozen \

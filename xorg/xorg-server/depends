@@ -22,3 +22,4 @@ pixman
 pkgconf make
 xkeyboard-config
 xtrans make
+libxdmcp

@@ -1,4 +1,5 @@
-git+https://sourceware.org/git/glibc.git#aa533d58ff12e27771d9c960a727d74992a3f2a3
+https://mirrors.ibiblio.org/gnu/glibc/glibc-2.41.tar.xz
+#git+https://sourceware.org/git/glibc.git#aa533d58ff12e27771d9c960a727d74992a3f2a3
 files/ldd sh-alternatives/
 files/locale-gen sh-alternatives/
 files/sotruss sh-alternatives/

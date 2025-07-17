@@ -2,7 +2,11 @@
 
 ./configure \
     --prefix=/usr \
+    --enable-pump-mode \
     --without-libiberty
 
 make
+
+ls 
+
 make DESTDIR="$1" install

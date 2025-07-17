@@ -9,5 +9,5 @@ cmake -B build -G Ninja \
 	-DCMAKE_POLICY_VERSION_MINIMUM=3.5 \
 	-Wno-dev 
 
-ninja -C build
+ninja -j4 -C build
 ninja -C build install
